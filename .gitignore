@@ -1,0 +1,17 @@
+# skupovi podataka se ne commitaju (veliki su i imaju vlastite licence)
+data/
+
+# tajne
+.env
+
+# generirano
+podaci/
+modeli/
+web/dist/
+alati/provjera_oznaka.html
+
+# okruženja
+.venv/
+__pycache__/
+node_modules/
+.DS_Store

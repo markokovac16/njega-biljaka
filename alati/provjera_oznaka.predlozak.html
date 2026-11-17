@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="hr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Provjera oznaka</title>
+<style>
+  :root { --bg:#f6f7f4; --fg:#1c2218; --mute:#5d6658; --card:#fff; --line:#d9ddd3; --z:#2e7d32; --n:#b3261e; --x:#6b6f66; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#151812; --fg:#e8ebe3; --mute:#a2aa9a; --card:#1e221a; --line:#343a2e; --z:#7bc67f; --n:#f2857c; --x:#a8ada1; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.45 system-ui, sans-serif; }
+  main { max-width: 980px; margin: 0 auto; padding: 16px; }
+  header { display:flex; flex-wrap:wrap; gap:8px 16px; align-items:baseline; justify-content:space-between; }
+  h1 { font-size: 20px; margin: 0; }
+  .stanje { color: var(--mute); font-variant-numeric: tabular-nums; }
+  progress { width:100%; height:6px; margin:10px 0; }
+  .slika { background:var(--card); border:1px solid var(--line); border-radius:10px; display:grid; place-items:center; height:min(68vh, 720px); overflow:hidden; }
+  .slika img { max-width:100%; max-height:100%; object-fit:contain; }
+  .opis { display:flex; flex-wrap:wrap; gap:6px 16px; justify-content:space-between; margin:8px 2px; color:var(--mute); }
+  .gumbi { display:grid; grid-template-columns: repeat(3, 1fr); gap:10px; }
+  button { font:inherit; padding:12px 10px; border-radius:10px; border:1px solid var(--line); background:var(--card); color:var(--fg); cursor:pointer; }
+  button kbd { font:inherit; opacity:.65; margin-left:6px; }
+  button.z { border-color:var(--z); } button.n { border-color:var(--n); } button.x { border-color:var(--x); }
+  button.odabran.z { background:var(--z); color:var(--bg); } button.odabran.n { background:var(--n); color:var(--bg); } button.odabran.x { background:var(--x); color:var(--bg); }
+  .dolje { display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; }
+  .dolje button { padding:8px 12px; }
+  details { margin-top:16px; color:var(--mute); } details p, details li { max-width: 70ch; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Provjera oznaka stvarnih fotografija</h1>
+    <span class="stanje" id="stanje"></span>
+  </header>
+  <progress id="napredak" value="0" max="1"></progress>
+  <div class="slika"><img id="slika" alt="fotografija biljke"></div>
+  <div class="opis"><span id="vrsta"></span><a id="opazanje" target="_blank" rel="noopener">opažanje na iNaturalistu</a></div>
+  <div class="gumbi">
+    <button class="z" data-o="zdrava">Zdrava <kbd>Z</kbd></button>
+    <button class="n" data-o="nezdrava">Nezdrava <kbd>N</kbd></button>
+    <button class="x" data-o="neupotrebljiva">Neupotrebljiva <kbd>X</kbd></button>
+  </div>
+  <div class="dolje">
+    <button id="natrag">← Prethodna</button>
+    <button id="naprijed">Sljedeća →</button>
+    <button id="prva">Prva neoznačena</button>
+    <button id="preuzmi">Preuzmi provjerene.csv</button>
+  </div>
+  <details open>
+    <summary>Kako označavati</summary>
+    <ul>
+      <li><b>Zdrava</b>: nema vidljivih problema. Prirodne šare na listovima i jedan stari suhi list pri dnu su normalni.</li>
+      <li><b>Nezdrava</b>: jasni znakovi poput žutih ili smeđih listova, suhih vrhova, pjega, truleži, uvenulosti, štetnika ili opeklina od sunca.</li>
+      <li><b>Neupotrebljiva</b>: navedena vrsta nije glavni motiv, biljka je premala ili mutna da bi se stanje procijenilo, ili slika nije fotografija biljke.</li>
+    </ul>
+  </details>
+</main>
+<script>
+const POPIS = /*POPIS*/[];
+const KLJUC = "provjera-oznaka-v1";
+let odluke = {};
+try { odluke = JSON.parse(localStorage.getItem(KLJUC) || "{}"); } catch (e) {}
+let i = 0;
+const el = id => document.getElementById(id);
+function spremi() { try { localStorage.setItem(KLJUC, JSON.stringify(odluke)); } catch (e) {} }
+function prvaNeoznacena() { const k = POPIS.findIndex(p => !odluke[p.id]); return k < 0 ? POPIS.length - 1 : k; }
+function prikazi() {
+  const p = POPIS[i];
+  el("slika").src = p.slika;
+  el("vrsta").textContent = "Vrsta prema iNaturalistu: " + p.vrsta;
+  el("opazanje").href = p.opazanje;
+  const gotovo = POPIS.filter(q => odluke[q.id]).length;
+  el("stanje").textContent = `slika ${i + 1} / ${POPIS.length} · označeno ${gotovo}`;
+  el("napredak").value = gotovo / POPIS.length;
+  document.querySelectorAll(".gumbi button").forEach(b => b.classList.toggle("odabran", odluke[p.id] === b.dataset.o));
+}
+function oznaci(o) { odluke[POPIS[i].id] = o; spremi(); if (i < POPIS.length - 1) i++; prikazi(); }
+function pomak(d) { i = Math.min(POPIS.length - 1, Math.max(0, i + d)); prikazi(); }
+document.querySelectorAll(".gumbi button").forEach(b => b.addEventListener("click", () => oznaci(b.dataset.o)));
+el("natrag").addEventListener("click", () => pomak(-1));
+el("naprijed").addEventListener("click", () => pomak(1));
+el("prva").addEventListener("click", () => { i = prvaNeoznacena(); prikazi(); });
+el("preuzmi").addEventListener("click", () => {
+  const redovi = ["id,oznaka"].concat(POPIS.filter(p => odluke[p.id]).map(p => `${p.id},${odluke[p.id]}`));
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([redovi.join("\n") + "\n"], { type: "text/csv" }));
+  a.download = "provjerene.csv"; a.click();
+});
+document.addEventListener("keydown", e => {
+  const k = e.key.toLowerCase();
+  if (k === "z") oznaci("zdrava"); else if (k === "n") oznaci("nezdrava"); else if (k === "x") oznaci("neupotrebljiva");
+  else if (e.key === "ArrowLeft") pomak(-1); else if (e.key === "ArrowRight") pomak(1);
+});
+i = prvaNeoznacena(); prikazi();
+</script>
+</body>
+</html>

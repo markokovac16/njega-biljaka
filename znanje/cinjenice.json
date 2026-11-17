@@ -1,0 +1,1109 @@
+[
+ {
+  "id": "C001",
+  "tema": "opcenito",
+  "kategorija": "dijagnoza",
+  "cinjenica": "Problemi u lončanicama često imaju više uzroka, pa treba ispraviti sve čimbenike, usredotočujući se na primarni uzrok.",
+  "citat": "Multiple factors often contribute to issues, so identify and correct all of them, focusing on the primary cause.",
+  "izvor": "Iowa State University Extension and Outreach: Diagnosing Houseplant Problems from Diseases",
+  "url": "https://yardandgarden.extension.iastate.edu/how-to/diagnosing-houseplant-problems-diseases"
+ },
+ {
+  "id": "C002",
+  "tema": "opcenito",
+  "kategorija": "bolesti",
+  "cinjenica": "Bolesti sobnih biljaka često su sekundarni simptomi lošeg okoliša i/ili njege.",
+  "citat": "are often secondary symptoms caused by poor environmental conditions and/or care.",
+  "izvor": "Iowa State University Extension and Outreach: Diagnosing Houseplant Problems from Diseases",
+  "url": "https://yardandgarden.extension.iastate.edu/how-to/diagnosing-houseplant-problems-diseases"
+ },
+ {
+  "id": "C003",
+  "tema": "opcenito",
+  "kategorija": "dijagnoza",
+  "cinjenica": "Uvenuće, žutilo, smeđenje i opadanje listova česti su znakovi lošeg zdravlja biljke.",
+  "citat": "Wilting, yellowing, browning and leaf drop are common signs of poor health",
+  "izvor": "Royal Horticultural Society (RHS): How to help a poorly houseplant",
+  "url": "https://www.rhs.org.uk/plants/types/houseplants/how-to-help-a-poorly-houseplant"
+ },
+ {
+  "id": "C004",
+  "tema": "opcenito",
+  "kategorija": "dijagnoza",
+  "cinjenica": "Problemi s biljkama često nastaju zimi zbog prezalijevanja, slabog svjetla ili suhog zraka.",
+  "citat": "Problems often arise in winter due to overwatering, poor light or dry air",
+  "izvor": "Royal Horticultural Society (RHS): How to help a poorly houseplant",
+  "url": "https://www.rhs.org.uk/plants/types/houseplants/how-to-help-a-poorly-houseplant"
+ },
+ {
+  "id": "C005",
+  "tema": "opcenito",
+  "kategorija": "dijagnoza",
+  "cinjenica": "Zdrav korijen treba biti svijetle boje i čvrst; tamni i mekani korijen upućuje na problem.",
+  "citat": "Healthy roots should be light-colored and firm.",
+  "izvor": "University of Maryland Extension: Diagnose Indoor Plant Problems",
+  "url": "https://extension.umd.edu/resource/diagnose-indoor-plant-problems"
+ },
+ {
+  "id": "C006",
+  "tema": "opcenito",
+  "kategorija": "dijagnoza",
+  "cinjenica": "U abiotske uzroke oštećenja sobnih biljaka ubrajaju se višak gnojiva, opekline od sunca, oštećenja od hladnoće, prezalijevanje i edem.",
+  "citat": "Abiotic: excess fertilizer, sunburn, cold injury, overwatering, edema",
+  "izvor": "NC State Extension Plant Disease and Insect Clinic: BOLO Houseplants",
+  "url": "https://pdic.ces.ncsu.edu/bolo-houseplants"
+ },
+ {
+  "id": "C007",
+  "tema": "opcenito",
+  "kategorija": "zalijevanje",
+  "cinjenica": "Najčešći uzrok propadanja lončanica je prezalijevanje.",
+  "citat": "The main cause of death of potted plants is over-watering.",
+  "izvor": "Clemson University HGIC: Indoor Plants – Watering",
+  "url": "https://hgic.clemson.edu/factsheet/indoor-plants-watering/"
+ },
+ {
+  "id": "C008",
+  "tema": "opcenito",
+  "kategorija": "zalijevanje",
+  "cinjenica": "Prezalijevanje smanjuje količinu kisika dostupnog korijenu za rast i pogoduje razvoju korijenskih bolesti.",
+  "citat": "Overwatering decreases the amount of oxygen available for root growth",
+  "izvor": "Clemson University HGIC: Houseplant Diseases & Disorders",
+  "url": "https://hgic.clemson.edu/factsheet/houseplant-diseases-disorders/"
+ },
+ {
+  "id": "C009",
+  "tema": "opcenito",
+  "kategorija": "zalijevanje",
+  "cinjenica": "Kronično podzalijevanje dovodi do uvenuća, uvijanja listova i uginuća biljke.",
+  "citat": "Chronic under-watering results in wilting, leaf curling, and death.",
+  "izvor": "Clemson University HGIC: Houseplant Diseases & Disorders",
+  "url": "https://hgic.clemson.edu/factsheet/houseplant-diseases-disorders/"
+ },
+ {
+  "id": "C010",
+  "tema": "opcenito",
+  "kategorija": "zalijevanje",
+  "cinjenica": "Kod podzalijevanja stariji listovi pri dnu biljke obično prvi požute i otpadnu, za razliku od prezalijevanja.",
+  "citat": "older leaves at the base of a dry plant will often yellow and fall first.",
+  "izvor": "Royal Horticultural Society (RHS): How to help a poorly houseplant",
+  "url": "https://www.rhs.org.uk/plants/types/houseplants/how-to-help-a-poorly-houseplant"
+ },
+ {
+  "id": "C011",
+  "tema": "opcenito",
+  "kategorija": "zalijevanje",
+  "cinjenica": "Kod prezalijevanja listovi, i stari i mladi, mogu istovremeno požutjeti i otpadati.",
+  "citat": "old and new leaves yellowing and dropping at the same time",
+  "izvor": "Royal Horticultural Society (RHS): How to help a poorly houseplant",
+  "url": "https://www.rhs.org.uk/plants/types/houseplants/how-to-help-a-poorly-houseplant"
+ },
+ {
+  "id": "C012",
+  "tema": "opcenito",
+  "kategorija": "zalijevanje",
+  "cinjenica": "Da bi se utvrdilo treba li zalijevati, prst se u supstrat zabode do prvog zgloba; ako je suho na vrhu prsta, biljku treba zaliti.",
+  "citat": "Stick your finger into the mix up to the first joint; if it is dry at your fingertip it needs water.",
+  "izvor": "Clemson University HGIC: Indoor Plants – Watering",
+  "url": "https://hgic.clemson.edu/factsheet/indoor-plants-watering/"
+ },
+ {
+  "id": "C013",
+  "tema": "opcenito",
+  "kategorija": "zalijevanje",
+  "cinjenica": "Temperatura vode za zalijevanje trebala bi biti između oko 17 i 22 °C.",
+  "citat": "The water temperature should be between 62 and 72 °F.",
+  "izvor": "Clemson University HGIC: Indoor Plants – Watering",
+  "url": "https://hgic.clemson.edu/factsheet/indoor-plants-watering/"
+ },
+ {
+  "id": "C014",
+  "tema": "opcenito",
+  "kategorija": "zalijevanje",
+  "cinjenica": "Neke sobne biljke osjetljive su na fluorid ili klor u vodovodnoj vodi.",
+  "citat": "Some houseplants are sensitive to fluoride or chlorine in tap water.",
+  "izvor": "Clemson University HGIC: Houseplant Diseases & Disorders",
+  "url": "https://hgic.clemson.edu/factsheet/houseplant-diseases-disorders/"
+ },
+ {
+  "id": "C015",
+  "tema": "opcenito",
+  "kategorija": "zalijevanje",
+  "cinjenica": "Posude za zalijevanje treba napuniti i ostaviti da voda na sobnoj temperaturi odstoji 24 sata prije upotrebe.",
+  "citat": "Fill watering containers and allow the water to stand at room temperature for 24 hours before use.",
+  "izvor": "Clemson University HGIC: Houseplant Diseases & Disorders",
+  "url": "https://hgic.clemson.edu/factsheet/houseplant-diseases-disorders/"
+ },
+ {
+  "id": "C016",
+  "tema": "opcenito",
+  "kategorija": "vlaga",
+  "cinjenica": "Smeđi vrhovi i rubovi listova mogu nastati zbog izloženosti vrućem, suhom zraku, nepravilnog zalijevanja, štete od kukaca i nakupljanja soli.",
+  "citat": "Brown leaf tips and margins can be caused by exposure to hot, dry air, improper watering, insect feeding, and salt accumulation.",
+  "izvor": "Clemson University HGIC: Houseplant Diseases & Disorders",
+  "url": "https://hgic.clemson.edu/factsheet/houseplant-diseases-disorders/"
+ },
+ {
+  "id": "C017",
+  "tema": "opcenito",
+  "kategorija": "vlaga",
+  "cinjenica": "Niska vlažnost zraka (suhi zrak) čest je uzrok problema kod lisnatih sobnih biljaka, osobito zimi kad je grijanje uključeno.",
+  "citat": "Low air humidity (dry air) is a common cause of problems on foliage houseplants",
+  "izvor": "Royal Horticultural Society (RHS): How to help a poorly houseplant",
+  "url": "https://www.rhs.org.uk/plants/types/houseplants/how-to-help-a-poorly-houseplant"
+ },
+ {
+  "id": "C018",
+  "tema": "opcenito",
+  "kategorija": "svjetlo",
+  "cinjenica": "Tanak, izdužen rast, blijedo lišće i slabo cvjetanje znakovi su da biljka ne dobiva dovoljno svjetla.",
+  "citat": "Weak, spindly growth, pale leaves and poor flowering are all signs",
+  "izvor": "Royal Horticultural Society (RHS): How to help a poorly houseplant",
+  "url": "https://www.rhs.org.uk/plants/types/houseplants/how-to-help-a-poorly-houseplant"
+ },
+ {
+  "id": "C019",
+  "tema": "opcenito",
+  "kategorija": "svjetlo",
+  "cinjenica": "Jaka izravna sunčeva svjetlost, primjerice kroz prozor okrenut prema jugu ljeti, može uzrokovati smeđe, opečene mrlje na listovima.",
+  "citat": "can cause brown scorched patches on leaves",
+  "izvor": "Royal Horticultural Society (RHS): How to help a poorly houseplant",
+  "url": "https://www.rhs.org.uk/plants/types/houseplants/how-to-help-a-poorly-houseplant"
+ },
+ {
+  "id": "C020",
+  "tema": "opcenito",
+  "kategorija": "svjetlo",
+  "cinjenica": "Biljke treba postupno privikavati na veći intenzitet svjetla, osobito pri iznošenju van ljeti.",
+  "citat": "Acclimate plants slowly to higher light intensities",
+  "izvor": "University of Maryland Extension: Diagnose Indoor Plant Problems",
+  "url": "https://extension.umd.edu/resource/diagnose-indoor-plant-problems"
+ },
+ {
+  "id": "C021",
+  "tema": "opcenito",
+  "kategorija": "temperatura",
+  "cinjenica": "Biljke smještene uz izvore topline, poput radijatora, često imaju oprljene listove.",
+  "citat": "Plants kept near direct sources of heat, like radiators, often suffer scorched leaves",
+  "izvor": "Royal Horticultural Society (RHS): How to help a poorly houseplant",
+  "url": "https://www.rhs.org.uk/plants/types/houseplants/how-to-help-a-poorly-houseplant"
+ },
+ {
+  "id": "C022",
+  "tema": "opcenito",
+  "kategorija": "temperatura",
+  "cinjenica": "Promaja može uzrokovati žutilo listova i suhe rubove listova.",
+  "citat": "draughts can cause leaf yellowing and dry leaf edges",
+  "izvor": "Royal Horticultural Society (RHS): How to help a poorly houseplant",
+  "url": "https://www.rhs.org.uk/plants/types/houseplants/how-to-help-a-poorly-houseplant"
+ },
+ {
+  "id": "C023",
+  "tema": "opcenito",
+  "kategorija": "temperatura",
+  "cinjenica": "Crni listovi, pad listova i kolaps cijele biljke simptomi su oštećenja od hladnoće.",
+  "citat": "Blackened leaves, leaf droop and whole plant collapse are symptoms of cold damage",
+  "izvor": "Royal Horticultural Society (RHS): How to help a poorly houseplant",
+  "url": "https://www.rhs.org.uk/plants/types/houseplants/how-to-help-a-poorly-houseplant"
+ },
+ {
+  "id": "C024",
+  "tema": "opcenito",
+  "kategorija": "temperatura",
+  "cinjenica": "Biljke treba štititi od temperatura ispod 10 °C.",
+  "citat": "Protect plants from temperatures below 50° F.",
+  "izvor": "University of Maryland Extension: Diagnose Indoor Plant Problems",
+  "url": "https://extension.umd.edu/resource/diagnose-indoor-plant-problems"
+ },
+ {
+  "id": "C025",
+  "tema": "opcenito",
+  "kategorija": "gnojidba",
+  "cinjenica": "Bijele do sivkaste kore na površini tla ili na rubu posude znak su nakupljanja soli.",
+  "citat": "White to grey crusty deposits on the soil surface or rim of pots is a sign of salt buildup.",
+  "izvor": "Clemson University HGIC: Houseplant Diseases & Disorders",
+  "url": "https://hgic.clemson.edu/factsheet/houseplant-diseases-disorders/"
+ },
+ {
+  "id": "C026",
+  "tema": "opcenito",
+  "kategorija": "gnojidba",
+  "cinjenica": "Da bi se iz tla isprale soli, biljke treba povremeno obilno zalijevati; prekomjerno gnojenje treba izbjegavati.",
+  "citat": "Drench plants with water periodically to leach some of the salts from the potting soil.",
+  "izvor": "Clemson University HGIC: Houseplant Diseases & Disorders",
+  "url": "https://hgic.clemson.edu/factsheet/houseplant-diseases-disorders/"
+ },
+ {
+  "id": "C027",
+  "tema": "opcenito",
+  "kategorija": "gnojidba",
+  "cinjenica": "Kod visoke koncentracije soli tlo treba isprati najmanje tri puta volumenom posude svježe vode.",
+  "citat": "Leach soil at least three times with pot volume of fresh water.",
+  "izvor": "University of Maryland Extension: Diagnose Indoor Plant Problems",
+  "url": "https://extension.umd.edu/resource/diagnose-indoor-plant-problems"
+ },
+ {
+  "id": "C028",
+  "tema": "opcenito",
+  "kategorija": "gnojidba",
+  "cinjenica": "Zalijevanje vodovodnom vodom u područjima s tvrdom vodom može dovesti do nedostatka hranjivih tvari.",
+  "citat": "Watering with tap water if you live in a hard water area can lead to nutrient deficiencies.",
+  "izvor": "Royal Horticultural Society (RHS): How to help a poorly houseplant",
+  "url": "https://www.rhs.org.uk/plants/types/houseplants/how-to-help-a-poorly-houseplant"
+ },
+ {
+  "id": "C029",
+  "tema": "opcenito",
+  "kategorija": "bolesti",
+  "cinjenica": "Simptomi truleži korijena i korijenova vrata uključuju žutilo, smeđenje i sušenje listova.",
+  "citat": "Symptoms of root rots/crown rots include yellowing, browning, and dieback of the leaves",
+  "izvor": "University of Maryland Extension: Root Rots of Indoor Plants",
+  "url": "https://extension.umd.edu/resource/root-rots-indoor-plants"
+ },
+ {
+  "id": "C030",
+  "tema": "opcenito",
+  "kategorija": "bolesti",
+  "cinjenica": "Kod truleži korijena treba koristiti sterilni supstrat i čiste ili nove posude te izbjegavati običnu vrtnu zemlju.",
+  "citat": "avoid regular garden soil, utilize a sterile potting media",
+  "izvor": "University of Maryland Extension: Root Rots of Indoor Plants",
+  "url": "https://extension.umd.edu/resource/root-rots-indoor-plants"
+ },
+ {
+  "id": "C031",
+  "tema": "opcenito",
+  "kategorija": "bolesti",
+  "cinjenica": "Zaraženi korijen je smeđe do crne boje i može biti mekan.",
+  "citat": "Infected roots are brown to black and may be soft.",
+  "izvor": "Clemson University HGIC: Houseplant Diseases & Disorders",
+  "url": "https://hgic.clemson.edu/factsheet/houseplant-diseases-disorders/"
+ },
+ {
+  "id": "C032",
+  "tema": "opcenito",
+  "kategorija": "bolesti",
+  "cinjenica": "Ako je zaraženo samo nekoliko korijena, njih treba odrezati, a biljku presaditi u sterilno tlo.",
+  "citat": "If only a few roots are infected, cut out these roots and repot the plant in sterile soil.",
+  "izvor": "Clemson University HGIC: Houseplant Diseases & Disorders",
+  "url": "https://hgic.clemson.edu/factsheet/houseplant-diseases-disorders/"
+ },
+ {
+  "id": "C033",
+  "tema": "opcenito",
+  "kategorija": "bolesti",
+  "cinjenica": "Kod antraknoze zaražene listove treba odrezati i uništiti te ne prskati lišće vodom.",
+  "citat": "Pick off and destroy infected leaves. Do not mist leaves.",
+  "izvor": "Clemson University HGIC: Houseplant Diseases & Disorders",
+  "url": "https://hgic.clemson.edu/factsheet/houseplant-diseases-disorders/"
+ },
+ {
+  "id": "C034",
+  "tema": "opcenito",
+  "kategorija": "bolesti",
+  "cinjenica": "Kod gljivičnih pjega na listovima treba izbjegavati prskanje vode po lišću jer se time širi gljiva.",
+  "citat": "Avoid splashing water on the foliage since this spreads the fungi.",
+  "izvor": "Clemson University HGIC: Houseplant Diseases & Disorders",
+  "url": "https://hgic.clemson.edu/factsheet/houseplant-diseases-disorders/"
+ },
+ {
+  "id": "C035",
+  "tema": "opcenito",
+  "kategorija": "bolesti",
+  "cinjenica": "Kod bakterijskih pjega treba ukloniti sav oboljeli biljni materijal.",
+  "citat": "Remove all diseased plant material.",
+  "izvor": "Clemson University HGIC: Houseplant Diseases & Disorders",
+  "url": "https://hgic.clemson.edu/factsheet/houseplant-diseases-disorders/"
+ },
+ {
+  "id": "C036",
+  "tema": "opcenito",
+  "kategorija": "bolesti",
+  "cinjenica": "Sistemski zaražene biljke nemaju lijeka i treba ih odbaciti.",
+  "citat": "There are no cures for systemically infected plants and these plants should be discarded.",
+  "izvor": "University of Maryland Extension: Bacterial Leaf Spots on Indoor Plants",
+  "url": "https://extension.umd.edu/resource/bacterial-leaf-spots-indoor-plants"
+ },
+ {
+  "id": "C037",
+  "tema": "opcenito",
+  "kategorija": "bolesti",
+  "cinjenica": "Pojedinačni listovi s pjegama mogu se odstraniti i uništiti.",
+  "citat": "Individual leaves with spots can be picked off and destroyed.",
+  "izvor": "University of Maryland Extension: Fungal Leaf Spots on Indoor Plants",
+  "url": "https://extension.umd.edu/resource/fungal-leaf-spots-indoor-plants"
+ },
+ {
+  "id": "C038",
+  "tema": "opcenito",
+  "kategorija": "bolesti",
+  "cinjenica": "Kod gljivičnih pjega biljke treba zalijevati rano ujutro kako bi se listovi brzo osušili.",
+  "citat": "Watering should be done early in the day to allow leaf surfaces time to dry quickly.",
+  "izvor": "University of Maryland Extension: Fungal Leaf Spots on Indoor Plants",
+  "url": "https://extension.umd.edu/resource/fungal-leaf-spots-indoor-plants"
+ },
+ {
+  "id": "C039",
+  "tema": "opcenito",
+  "kategorija": "bolesti",
+  "cinjenica": "Fungicidi ne djeluju protiv bolesti koje uzrokuju virusi ili bakterije.",
+  "citat": "Fungicides are not effective for controlling diseases caused by viruses or bacteria.",
+  "izvor": "Iowa State University Extension and Outreach: Diagnosing Houseplant Problems from Diseases",
+  "url": "https://yardandgarden.extension.iastate.edu/how-to/diagnosing-houseplant-problems-diseases"
+ },
+ {
+  "id": "C040",
+  "tema": "opcenito",
+  "kategorija": "bolesti",
+  "cinjenica": "Pepelnica se najbrže razvija u vlažnim uvjetima, pa dobra ventilacija i izbjegavanje prezalijevanja pomažu u kontroli bolesti.",
+  "citat": "proper ventilation and not overwatering will help control this disease.",
+  "izvor": "Clemson University HGIC: Houseplant Diseases & Disorders",
+  "url": "https://hgic.clemson.edu/factsheet/houseplant-diseases-disorders/"
+ },
+ {
+  "id": "C041",
+  "tema": "opcenito",
+  "kategorija": "stetnici",
+  "cinjenica": "Novo kupljene biljke treba izolirati od ostalih biljaka u domu na šest tjedana.",
+  "citat": "Isolate new plants from plants already in the home for six weeks",
+  "izvor": "Clemson University HGIC: Common Houseplant Insects & Related Pests",
+  "url": "https://hgic.clemson.edu/factsheet/common-houseplant-insects-related-pests/"
+ },
+ {
+  "id": "C042",
+  "tema": "opcenito",
+  "kategorija": "stetnici",
+  "cinjenica": "Prije kupnje ili unošenja biljke u kuću treba provjeriti biljku i njezinu posudu ima li štetnika.",
+  "citat": "Before buying or bringing a plant indoors, always check it and its container for signs of pests.",
+  "izvor": "Clemson University HGIC: Common Houseplant Insects & Related Pests",
+  "url": "https://hgic.clemson.edu/factsheet/common-houseplant-insects-related-pests/"
+ },
+ {
+  "id": "C043",
+  "tema": "opcenito",
+  "kategorija": "stetnici",
+  "cinjenica": "Grinje (crvenci) uzrokuju svijetlo pjegavo šarenilo na gornjoj strani listova, zbog čega biljka izgleda blijedo.",
+  "citat": "light-colored speckling on the upper surface of leaves",
+  "izvor": "Clemson University HGIC: Common Houseplant Insects & Related Pests",
+  "url": "https://hgic.clemson.edu/factsheet/common-houseplant-insects-related-pests/"
+ },
+ {
+  "id": "C044",
+  "tema": "opcenito",
+  "kategorija": "stetnici",
+  "cinjenica": "Protiv grinja biljku je često potrebno prskati (vodom ili insekticidnim sapunom) jednom tjedno nekoliko tjedana.",
+  "citat": "It is often necessary to spray once a week for several weeks to control mites.",
+  "izvor": "Clemson University HGIC: Common Houseplant Insects & Related Pests",
+  "url": "https://hgic.clemson.edu/factsheet/common-houseplant-insects-related-pests/"
+ },
+ {
+  "id": "C045",
+  "tema": "opcenito",
+  "kategorija": "stetnici",
+  "cinjenica": "Brašnaste uši najčešće se nalaze na donjoj strani listova i u pazušcima listova.",
+  "citat": "found on the lower surfaces of leaves and in leaf axils",
+  "izvor": "Clemson University HGIC: Common Houseplant Insects & Related Pests",
+  "url": "https://hgic.clemson.edu/factsheet/common-houseplant-insects-related-pests/"
+ },
+ {
+  "id": "C046",
+  "tema": "opcenito",
+  "kategorija": "stetnici",
+  "cinjenica": "Manji napadaji brašnastih ušiju mogu se ukloniti ručno ili brisanjem svake uši vatiranim štapićem namočenim u alkohol.",
+  "citat": "Light infestations can be controlled by removing individual mealybugs by hand",
+  "izvor": "Clemson University HGIC: Common Houseplant Insects & Related Pests",
+  "url": "https://hgic.clemson.edu/factsheet/common-houseplant-insects-related-pests/"
+ },
+ {
+  "id": "C047",
+  "tema": "opcenito",
+  "kategorija": "stetnici",
+  "cinjenica": "Gljivične mušice su najčešći problem kad se u sobnom uzgoju koristi tlo bogato organskom tvari, poput treseta.",
+  "citat": "most often a problem when potting soil that is rich in organic matter",
+  "izvor": "Clemson University HGIC: Common Houseplant Insects & Related Pests",
+  "url": "https://hgic.clemson.edu/factsheet/common-houseplant-insects-related-pests/"
+ },
+ {
+  "id": "C048",
+  "tema": "opcenito",
+  "kategorija": "stetnici",
+  "cinjenica": "Kod biljaka koje to podnose tlo treba pustiti da se osuši između zalijevanja; suhi uvjeti uništavaju ličinke gljivičnih mušica.",
+  "citat": "Dry conditions will kill the larvae.",
+  "izvor": "Clemson University HGIC: Common Houseplant Insects & Related Pests",
+  "url": "https://hgic.clemson.edu/factsheet/common-houseplant-insects-related-pests/"
+ },
+ {
+  "id": "C049",
+  "tema": "opcenito",
+  "kategorija": "stetnici",
+  "cinjenica": "Insekticidni sapuni djeluju samo pri izravnom dodiru s kukcima.",
+  "citat": "Insecticidal soaps are contact insecticides",
+  "izvor": "Clemson University HGIC: Common Houseplant Insects & Related Pests",
+  "url": "https://hgic.clemson.edu/factsheet/common-houseplant-insects-related-pests/"
+ },
+ {
+  "id": "C050",
+  "tema": "opcenito",
+  "kategorija": "stetnici",
+  "cinjenica": "Za sobne biljke malo je pesticida dopuštenih za uporabu u zatvorenom prostoru, pa treba provjeriti je li to navedeno na etiketi.",
+  "citat": "Only a few pesticides are labeled for use indoors on houseplants.",
+  "izvor": "Clemson University HGIC: Common Houseplant Insects & Related Pests",
+  "url": "https://hgic.clemson.edu/factsheet/common-houseplant-insects-related-pests/"
+ },
+ {
+  "id": "C051",
+  "tema": "opcenito",
+  "kategorija": "stetnici",
+  "cinjenica": "Royal Horticultural Society ne podržava upotrebu pesticida i preporučuje nekemijske metode suzbijanja štetnika kad su potrebne.",
+  "citat": "recommends that gardeners use non-chemical control options whenever needed",
+  "izvor": "Royal Horticultural Society (RHS): How to help a poorly houseplant",
+  "url": "https://www.rhs.org.uk/plants/types/houseplants/how-to-help-a-poorly-houseplant"
+ },
+ {
+  "id": "C052",
+  "tema": "opcenito",
+  "kategorija": "ostalo",
+  "cinjenica": "Ako je biljka jako oštećena i nije vrijedna, najjednostavnije rješenje može biti odbacivanje biljke i njezina tla.",
+  "citat": "the best and simplest solution may be to discard the plant and its soil",
+  "izvor": "Clemson University HGIC: Common Houseplant Insects & Related Pests",
+  "url": "https://hgic.clemson.edu/factsheet/common-houseplant-insects-related-pests/"
+ },
+ {
+  "id": "C053",
+  "tema": "opcenito",
+  "kategorija": "ostalo",
+  "cinjenica": "Ako je kod žute cijele biljke većina korijena tamna, mekana i mrtva, bolje je odbaciti biljku.",
+  "citat": "if most are dark, soft, and dead, it is better to discard the plant.",
+  "izvor": "Clemson University HGIC: Houseplant Diseases & Disorders",
+  "url": "https://hgic.clemson.edu/factsheet/houseplant-diseases-disorders/"
+ },
+ {
+  "id": "C054",
+  "tema": "opcenito",
+  "kategorija": "ostalo",
+  "cinjenica": "Korijenje lončanice koje je ispunilo posudu i čini da biljka uvene rješava se presađivanjem u veću posudu.",
+  "citat": "Correct this problem by repotting in a larger pot.",
+  "izvor": "Clemson University HGIC: Houseplant Diseases & Disorders",
+  "url": "https://hgic.clemson.edu/factsheet/houseplant-diseases-disorders/"
+ },
+ {
+  "id": "C055",
+  "tema": "opcenito",
+  "kategorija": "ostalo",
+  "cinjenica": "Pri presađivanju treba koristiti komercijalno pripremljeno tlo za lončanice, a ne zemlju iz vrta, koja može biti izvor štetnika.",
+  "citat": "use commercially prepared potting soil rather than soil from outdoors",
+  "izvor": "Clemson University HGIC: Common Houseplant Insects & Related Pests",
+  "url": "https://hgic.clemson.edu/factsheet/common-houseplant-insects-related-pests/"
+ },
+ {
+  "id": "C056",
+  "tema": "opcenito",
+  "kategorija": "ostalo",
+  "cinjenica": "Biljka može imati koristi od presađivanja u svježi supstrat bez treseta.",
+  "citat": "your plant may benefit from being repotted into fresh peat-free compost",
+  "izvor": "Royal Horticultural Society (RHS): How to help a poorly houseplant",
+  "url": "https://www.rhs.org.uk/plants/types/houseplants/how-to-help-a-poorly-houseplant"
+ },
+ {
+  "id": "C057",
+  "tema": "opcenito",
+  "kategorija": "ostalo",
+  "cinjenica": "Listove koji su potpuno smeđi, potpuno žuti, plijesnivi ili sasušeni treba odrezati; listove koji su pretežno zeleni treba zadržati dok biljka ne razvije novo lišće.",
+  "citat": "Cut off any mouldy, shrivelled, completely brown or completely yellow leaves",
+  "izvor": "Royal Horticultural Society (RHS): How to help a poorly houseplant",
+  "url": "https://www.rhs.org.uk/plants/types/houseplants/how-to-help-a-poorly-houseplant"
+ },
+ {
+  "id": "C058",
+  "tema": "zlatni puzavac",
+  "kategorija": "svjetlo",
+  "cinjenica": "Zlatni puzavac preferira jaku, neizravnu svjetlost, ali dugo podnosi slabo osvjetljenje.",
+  "citat": "It prefers bright, indirect light and survives for long periods in low light.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Epipremnum aureum",
+  "url": "https://plants.ces.ncsu.edu/plants/epipremnum-aureum/"
+ },
+ {
+  "id": "C059",
+  "tema": "zlatni puzavac",
+  "kategorija": "svjetlo",
+  "cinjenica": "Slabo svjetlo može uzrokovati gubitak šarenila (varijegacije) na listovima zlatnog puzavca.",
+  "citat": "Low light can cause loss of variegation.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Epipremnum aureum",
+  "url": "https://plants.ces.ncsu.edu/plants/epipremnum-aureum/"
+ },
+ {
+  "id": "C060",
+  "tema": "zlatni puzavac",
+  "kategorija": "zalijevanje",
+  "cinjenica": "Supstrat treba biti dobro propustan i treba ga pustiti da se osuši između zalijevanja.",
+  "citat": "let the well-drained potting medium dry out between watering",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Epipremnum aureum",
+  "url": "https://plants.ces.ncsu.edu/plants/epipremnum-aureum/"
+ },
+ {
+  "id": "C061",
+  "tema": "zlatni puzavac",
+  "kategorija": "vlaga",
+  "cinjenica": "Za povećanje vlažnosti zraka preporučuje se ovlaživač ili posuda postavljena na pladanj s vlažnim kamenčićima.",
+  "citat": "Use a humidifier or place the plant container on a tray of wet pebbles to increase humidity",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Epipremnum aureum",
+  "url": "https://plants.ces.ncsu.edu/plants/epipremnum-aureum/"
+ },
+ {
+  "id": "C062",
+  "tema": "zlatni puzavac",
+  "kategorija": "gnojidba",
+  "cinjenica": "Gnojiti svaka dva mjeseca, osim zimi kad biljka miruje.",
+  "citat": "Fertilize every other month except when the plant is dormant in the winter.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Epipremnum aureum",
+  "url": "https://plants.ces.ncsu.edu/plants/epipremnum-aureum/"
+ },
+ {
+  "id": "C063",
+  "tema": "zlatni puzavac",
+  "kategorija": "bolesti",
+  "cinjenica": "Truljenje korijena i crnjenje rubova listova mogu nastati pri prezalijevanju.",
+  "citat": "Root rot and blackening of the leaf margins can occur with overwatering.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Epipremnum aureum",
+  "url": "https://plants.ces.ncsu.edu/plants/epipremnum-aureum/"
+ },
+ {
+  "id": "C064",
+  "tema": "zlatni puzavac",
+  "kategorija": "stetnici",
+  "cinjenica": "Treba pratiti pojavu brašnastih ušiju i štitastih ušiju na zlatnom puzavcu.",
+  "citat": "Monitor for mealybugs and scales.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Epipremnum aureum",
+  "url": "https://plants.ces.ncsu.edu/plants/epipremnum-aureum/"
+ },
+ {
+  "id": "C065",
+  "tema": "zlatni puzavac",
+  "kategorija": "otrovnost",
+  "cinjenica": "NC State navodi zlatni puzavac kao biljku srednje ozbiljnosti otrovnih svojstava.",
+  "citat": "This plant has medium severity poison characteristics.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Epipremnum aureum",
+  "url": "https://plants.ces.ncsu.edu/plants/epipremnum-aureum/"
+ },
+ {
+  "id": "C066",
+  "tema": "zlatni puzavac",
+  "kategorija": "otrovnost",
+  "cinjenica": "Prema NC Stateu, simptomi trovanja uključuju iritaciju usne šupljine, bol i oticanje usta, jezika i usana te pretjerano slinjenje.",
+  "citat": "Oral irritation, pain and swelling of mouth, tongue, and lips, excessive drooling",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Epipremnum aureum",
+  "url": "https://plants.ces.ncsu.edu/plants/epipremnum-aureum/"
+ },
+ {
+  "id": "C067",
+  "tema": "zlatni puzavac",
+  "kategorija": "otrovnost",
+  "cinjenica": "ASPCA navodi zlatni puzavac kao otrovan za pse i mačke; toksični principi su netopljivi kalcijevi oksalati.",
+  "citat": "Toxic Principles: Insoluble calcium oxalates",
+  "izvor": "ASPCA: Toxic and Non-toxic Plants – Golden Pothos",
+  "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/golden-pothos"
+ },
+ {
+  "id": "C068",
+  "tema": "zlatni puzavac",
+  "kategorija": "otrovnost",
+  "cinjenica": "Prema ASPCA-i, kod ljubimaca se javljaju iritacija usta, usana i jezika, pretjerano slinjenje, povraćanje i teškoće s gutanjem.",
+  "citat": "Oral irritation, intense burning and irritation of mouth, tongue and lips, excessive drooling, vomiting, difficulty swallowing.",
+  "izvor": "ASPCA: Toxic and Non-toxic Plants – Golden Pothos",
+  "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/golden-pothos"
+ },
+ {
+  "id": "C069",
+  "tema": "sansevierija",
+  "kategorija": "svjetlo",
+  "cinjenica": "Sansevieriju treba postaviti na mjesto gdje dobiva izravno sunce samo 2 do 6 sati dnevno; podnosi vrlo slabo svjetlo.",
+  "citat": "Place in a location where it will receive direct sunlight only part of the day, 2 to 6 hours",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Dracaena trifasciata",
+  "url": "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/"
+ },
+ {
+  "id": "C070",
+  "tema": "sansevierija",
+  "kategorija": "zalijevanje",
+  "cinjenica": "Od proljeća do jeseni tlo treba pustiti da se osuši između zalijevanja; prezalijevanje dovodi do truljenja korijena.",
+  "citat": "In spring to autumn allow the soil to dry between waterings.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Dracaena trifasciata",
+  "url": "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/"
+ },
+ {
+  "id": "C071",
+  "tema": "sansevierija",
+  "kategorija": "zalijevanje",
+  "cinjenica": "Zimi se sansevierija zalijeva samo jednom u jedan do dva mjeseca.",
+  "citat": "In winter only water every one to two months.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Dracaena trifasciata",
+  "url": "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/"
+ },
+ {
+  "id": "C072",
+  "tema": "sansevierija",
+  "kategorija": "tlo",
+  "cinjenica": "Za sansevieriju su nužni dobro drenirano tlo i pažljivo zalijevanje.",
+  "citat": "Well-drained soil and careful watering are a must",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Dracaena trifasciata",
+  "url": "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/"
+ },
+ {
+  "id": "C073",
+  "tema": "sansevierija",
+  "kategorija": "bolesti",
+  "cinjenica": "Prezalijevanje može uzrokovati truljenje korijena sansevierije.",
+  "citat": "Overwatering may cause root rot.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Dracaena trifasciata",
+  "url": "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/"
+ },
+ {
+  "id": "C074",
+  "tema": "sansevierija",
+  "kategorija": "vlaga",
+  "cinjenica": "Sansevierija podnosi nisku vlažnost zraka.",
+  "citat": "It tolerates low humidity",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Dracaena trifasciata",
+  "url": "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/"
+ },
+ {
+  "id": "C075",
+  "tema": "sansevierija",
+  "kategorija": "temperatura",
+  "cinjenica": "Sansevierija podnosi hladne temperature oko 10 °C.",
+  "citat": "cool temperatures around 50 degrees",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Dracaena trifasciata",
+  "url": "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/"
+ },
+ {
+  "id": "C076",
+  "tema": "sansevierija",
+  "kategorija": "stetnici",
+  "cinjenica": "Kod sansevierije treba pratiti pojavu brašnastih ušiju i crvenaca (grinja).",
+  "citat": "Monitor for mealybugs and spider mites.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Dracaena trifasciata",
+  "url": "https://plants.ces.ncsu.edu/plants/dracaena-trifasciata/"
+ },
+ {
+  "id": "C077",
+  "tema": "sansevierija",
+  "kategorija": "otrovnost",
+  "cinjenica": "ASPCA navodi sansevieriju kao otrovnu za pse i mačke; toksični principi su saponini.",
+  "citat": "Toxic Principles: Saponins",
+  "izvor": "ASPCA: Toxic and Non-toxic Plants – Snake Plant",
+  "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/snake-plant"
+ },
+ {
+  "id": "C078",
+  "tema": "sansevierija",
+  "kategorija": "otrovnost",
+  "cinjenica": "Simptomi trovanja sansevierijom prema ASPCA-i su mučnina, povraćanje i proljev.",
+  "citat": "Clinical Signs: Nausea, vomiting, diarrhea.",
+  "izvor": "ASPCA: Toxic and Non-toxic Plants – Snake Plant",
+  "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/snake-plant"
+ },
+ {
+  "id": "C079",
+  "tema": "zelenčica",
+  "kategorija": "svjetlo",
+  "cinjenica": "Zelenčica preferira srednje jako svjetlo, ali može podnositi i duboku sjenu.",
+  "citat": "Spider plant prefers medium light levels yet can tolerate deep shade.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Chlorophytum comosum",
+  "url": "https://plants.ces.ncsu.edu/plants/chlorophytum-comosum/"
+ },
+ {
+  "id": "C080",
+  "tema": "zelenčica",
+  "kategorija": "svjetlo",
+  "cinjenica": "Zelenčica ne podnosi izravno sunce.",
+  "citat": "It is intolerant of direct sunlight.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Chlorophytum comosum",
+  "url": "https://plants.ces.ncsu.edu/plants/chlorophytum-comosum/"
+ },
+ {
+  "id": "C081",
+  "tema": "zelenčica",
+  "kategorija": "zalijevanje",
+  "cinjenica": "Zelenčica najbolje raste u vlažnom tlu i srednjoj vlažnosti zraka, iako podnosi sušu i suho tlo.",
+  "citat": "It grows best in moist soil and medium air humidity, though it is tolerant of drought and dry soil.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Chlorophytum comosum",
+  "url": "https://plants.ces.ncsu.edu/plants/chlorophytum-comosum/"
+ },
+ {
+  "id": "C082",
+  "tema": "zelenčica",
+  "kategorija": "vlaga",
+  "cinjenica": "Za povećanje vlažnosti zraka oko zelenčice preporučuje se ovlaživač ili posuda na pladnju s kamenčićima i vodom.",
+  "citat": "Use a humidifier or place the plant container on a tray of pebbles with water to increase the humidity.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Chlorophytum comosum",
+  "url": "https://plants.ces.ncsu.edu/plants/chlorophytum-comosum/"
+ },
+ {
+  "id": "C083",
+  "tema": "zelenčica",
+  "kategorija": "temperatura",
+  "cinjenica": "Temperaturu oko zelenčice treba držati iznad oko 7 °C.",
+  "citat": "Keep temperatures above 45 degrees F.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Chlorophytum comosum",
+  "url": "https://plants.ces.ncsu.edu/plants/chlorophytum-comosum/"
+ },
+ {
+  "id": "C084",
+  "tema": "zelenčica",
+  "kategorija": "zalijevanje",
+  "cinjenica": "Zimi zelenčicu treba zalijevati rjeđe.",
+  "citat": "Reduce watering during winter.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Chlorophytum comosum",
+  "url": "https://plants.ces.ncsu.edu/plants/chlorophytum-comosum/"
+ },
+ {
+  "id": "C085",
+  "tema": "zelenčica",
+  "kategorija": "zalijevanje",
+  "cinjenica": "Vodu iz slavine treba izbjegavati jer klor i fluoridi mogu uzrokovati opeklinu vrhova listova zelenčice.",
+  "citat": "Avoid watering with tap water as the chlorine and fluorides can cause leaf tip burn.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Chlorophytum comosum",
+  "url": "https://plants.ces.ncsu.edu/plants/chlorophytum-comosum/"
+ },
+ {
+  "id": "C086",
+  "tema": "zelenčica",
+  "kategorija": "gnojidba",
+  "cinjenica": "Prekomjerna gnojidba zelenčice smanjuje stvaranje mladih biljčica (izdanaka).",
+  "citat": "Do not over-fertilize, as this decreases plantlet formation.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Chlorophytum comosum",
+  "url": "https://plants.ces.ncsu.edu/plants/chlorophytum-comosum/"
+ },
+ {
+  "id": "C087",
+  "tema": "zelenčica",
+  "kategorija": "ostalo",
+  "cinjenica": "Mladice zelenčice nastaju kad matična biljka dobiva kratke dane i duge, neprekinute noći, s manje od 12 sati svjetla dnevno najmanje tri tjedna.",
+  "citat": "develop when the mother plant receives short days and long, uninterrupted nights",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Chlorophytum comosum",
+  "url": "https://plants.ces.ncsu.edu/plants/chlorophytum-comosum/"
+ },
+ {
+  "id": "C088",
+  "tema": "zelenčica",
+  "kategorija": "otrovnost",
+  "cinjenica": "ASPCA navodi zelenčicu kao netoksičnu za pse i mačke.",
+  "citat": "Non-Toxic to Dogs, Non-Toxic to Cats",
+  "izvor": "ASPCA: Toxic and Non-toxic Plants – Spider Plant",
+  "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/spider-plant"
+ },
+ {
+  "id": "C089",
+  "tema": "aloja",
+  "kategorija": "svjetlo",
+  "cinjenica": "Aloju treba uzgajati na suncu do polusjene.",
+  "citat": "Grow this plant in full sun to partial shade",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Aloe vera",
+  "url": "https://plants.ces.ncsu.edu/plants/aloe-vera/"
+ },
+ {
+  "id": "C090",
+  "tema": "aloja",
+  "kategorija": "tlo",
+  "cinjenica": "Aloji treba vrlo dobro drenirano tlo prikladno za sukulente; posuda treba imati nekoliko odvodnih rupa, a najbolja je glinena posuda.",
+  "citat": "very well-drained soils suitable for succulents",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Aloe vera",
+  "url": "https://plants.ces.ncsu.edu/plants/aloe-vera/"
+ },
+ {
+  "id": "C091",
+  "tema": "aloja",
+  "kategorija": "zalijevanje",
+  "cinjenica": "Tlo kod aloje treba potpuno osušiti između zalijevanja.",
+  "citat": "Allow the soil to completely dry between waterings.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Aloe vera",
+  "url": "https://plants.ces.ncsu.edu/plants/aloe-vera/"
+ },
+ {
+  "id": "C092",
+  "tema": "aloja",
+  "kategorija": "zalijevanje",
+  "cinjenica": "Aloju treba zimi zalijevati rjeđe.",
+  "citat": "Water less frequently in the winter months.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Aloe vera",
+  "url": "https://plants.ces.ncsu.edu/plants/aloe-vera/"
+ },
+ {
+  "id": "C093",
+  "tema": "aloja",
+  "kategorija": "bolesti",
+  "cinjenica": "Prezalijevanje treba izbjegavati jer može dovesti do truljenja korijena aloje.",
+  "citat": "Overwatering should be avoided, it can lead to the roots rotting.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Aloe vera",
+  "url": "https://plants.ces.ncsu.edu/plants/aloe-vera/"
+ },
+ {
+  "id": "C094",
+  "tema": "aloja",
+  "kategorija": "bolesti",
+  "cinjenica": "Problemi aloje uključuju štitaste uši, pjegavost lišća, hrđu i čađavu plijesan.",
+  "citat": "Diseases include scale, leaf spot, aloe rust, and sooty mold.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Aloe vera",
+  "url": "https://plants.ces.ncsu.edu/plants/aloe-vera/"
+ },
+ {
+  "id": "C095",
+  "tema": "aloja",
+  "kategorija": "stetnici",
+  "cinjenica": "Brašnaste uši i lisne uši mogu utjecati na zdravlje aloje.",
+  "citat": "Mealybugs and aphids are insects that may affect the health of your aloe plant.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Aloe vera",
+  "url": "https://plants.ces.ncsu.edu/plants/aloe-vera/"
+ },
+ {
+  "id": "C096",
+  "tema": "aloja",
+  "kategorija": "temperatura",
+  "cinjenica": "Aloja se često uzgaja u zatvorenom prostoru, a kao višegodišnja biljka može rasti vani u USDA zonama otpornosti 10 i višim.",
+  "citat": "it can be an outdoor perennial in zones 10 and higher.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Aloe vera",
+  "url": "https://plants.ces.ncsu.edu/plants/aloe-vera/"
+ },
+ {
+  "id": "C097",
+  "tema": "aloja",
+  "kategorija": "otrovnost",
+  "cinjenica": "ASPCA navodi aloju kao otrovnu za pse, mačke i konje.",
+  "citat": "Toxic to Dogs, Toxic to Cats, Toxic to Horses",
+  "izvor": "ASPCA: Toxic and Non-toxic Plants – Aloe",
+  "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/aloe"
+ },
+ {
+  "id": "C098",
+  "tema": "aloja",
+  "kategorija": "otrovnost",
+  "cinjenica": "Toksični principi aloje prema ASPCA-i su saponini i antrakinoni; simptomi su povraćanje (ne kod konja), letargija i proljev.",
+  "citat": "Clinical Signs: Vomiting (not horses), lethargy, diarrhea.",
+  "izvor": "ASPCA: Toxic and Non-toxic Plants – Aloe",
+  "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/aloe"
+ },
+ {
+  "id": "C099",
+  "tema": "aloja",
+  "kategorija": "otrovnost",
+  "cinjenica": "ASPCA navodi da se gel aloje smatra jestivim, ali je sama biljka otrovna za pse, mačke i konje.",
+  "citat": "The gel is considered edible.",
+  "izvor": "ASPCA: Toxic and Non-toxic Plants – Aloe",
+  "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/aloe"
+ },
+ {
+  "id": "C100",
+  "tema": "aloja",
+  "kategorija": "otrovnost",
+  "cinjenica": "NC State navodi aloju kao biljku niske ozbiljnosti otrovnih svojstava; otrovnost se odnosi na gutanje ili dermatitis.",
+  "citat": "This plant has low severity poison characteristics.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Aloe vera",
+  "url": "https://plants.ces.ncsu.edu/plants/aloe-vera/"
+ },
+ {
+  "id": "C101",
+  "tema": "kalanhoja",
+  "kategorija": "svjetlo",
+  "cinjenica": "Izvan tropa kalanhoje preferiraju mjesta u zatvorenom s jakom neizravnom svjetlošću, suhim tlom i niskom relativnom vlažnošću zraka.",
+  "citat": "Outside of the tropics, this plant prefers interior sites with bright indirect sunlight, dry soil, and low relative humidity.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Kalanchoe (rod)",
+  "url": "https://plants.ces.ncsu.edu/plants/kalanchoe/"
+ },
+ {
+  "id": "C104",
+  "tema": "kalanhoja",
+  "kategorija": "svjetlo",
+  "cinjenica": "Za poticanje cvatnje kalanhoje trebaju 12 sati tame i manje od 12 sati dnevnog svjetla tijekom 6 tjedana.",
+  "citat": "To encourage blooming, these plants need 12 hours of darkness and less than 12 hours of daylight for 6 weeks.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Kalanchoe (rod)",
+  "url": "https://plants.ces.ncsu.edu/plants/kalanchoe/"
+ },
+ {
+  "id": "C105",
+  "tema": "kalanhoja",
+  "kategorija": "zalijevanje",
+  "cinjenica": "Kalanhoje treba dobro zaliti, a zatim pustiti da se tlo osuši između zalijevanja.",
+  "citat": "Water these plants well and then allow the soil to dry out between waterings.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Kalanchoe (rod)",
+  "url": "https://plants.ces.ncsu.edu/plants/kalanchoe/"
+ },
+ {
+  "id": "C106",
+  "tema": "kalanhoja",
+  "kategorija": "tlo",
+  "cinjenica": "Kalanchoe pinnata preferira dobro drenirana tla.",
+  "citat": "Prefers well-drained soils.",
+  "izvor": "NParks Flora & Fauna Web: Kalanchoe pinnata",
+  "url": "https://www.nparks.gov.sg/florafaunaweb/flora/3/3/3323"
+ },
+ {
+  "id": "C107",
+  "tema": "kalanhoja",
+  "kategorija": "temperatura",
+  "cinjenica": "Kalanhoje preferiraju temperature od oko 16 do 29 °C; biljke u posudama treba unijeti prije nego što temperatura padne ispod 10 °C.",
+  "citat": "They prefer temperatures between 60 to 85 degrees Fahrenheit. They can be planted in a container and brought indoors over the winter before the temperatures drop below 50 degrees F.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Kalanchoe (rod)",
+  "url": "https://plants.ces.ncsu.edu/plants/kalanchoe/"
+ },
+ {
+  "id": "C108",
+  "tema": "kalanhoja",
+  "kategorija": "bolesti",
+  "cinjenica": "Prezalijevanje kalanhoje može uzrokovati truljenje korijena.",
+  "citat": "Root rot can result from overwatering.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Kalanchoe (rod)",
+  "url": "https://plants.ces.ncsu.edu/plants/kalanchoe/"
+ },
+ {
+  "id": "C109",
+  "tema": "kalanhoja",
+  "kategorija": "bolesti",
+  "cinjenica": "Na kalanhojama se može pojaviti pepelnica.",
+  "citat": "Powdery mildew can also occur.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Kalanchoe (rod)",
+  "url": "https://plants.ces.ncsu.edu/plants/kalanchoe/"
+ },
+ {
+  "id": "C110",
+  "tema": "kalanhoja",
+  "kategorija": "stetnici",
+  "cinjenica": "Kod kalanhoja treba pratiti pojavu brašnastih ušiju, lisnih ušiju i smeđe štitaste uši.",
+  "citat": "Monitor for mealybugs, aphids and brown scale.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Kalanchoe (rod)",
+  "url": "https://plants.ces.ncsu.edu/plants/kalanchoe/"
+ },
+ {
+  "id": "C111",
+  "tema": "kalanhoja",
+  "kategorija": "bolesti",
+  "cinjenica": "Kalanchoe pinnata može oboljeti od truleži korijena ako raste u slabo dreniranom tlu.",
+  "citat": "Plant may suffer root rot If grown in poorly-drained soils.",
+  "izvor": "NParks Flora & Fauna Web: Kalanchoe pinnata",
+  "url": "https://www.nparks.gov.sg/florafaunaweb/flora/3/3/3323"
+ },
+ {
+  "id": "C112",
+  "tema": "kalanhoja",
+  "kategorija": "otrovnost",
+  "cinjenica": "Biljke roda Kalanchoe otrovne su za ljude i kućne ljubimce ako se progutaju; simptomi su mučnina, povraćanje, proljev i poremećaji srčanog ritma.",
+  "citat": "The plants in this genus are toxic to humans and pets if ingested.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Kalanchoe (rod)",
+  "url": "https://plants.ces.ncsu.edu/plants/kalanchoe/"
+ },
+ {
+  "id": "C113",
+  "tema": "kalanhoja",
+  "kategorija": "otrovnost",
+  "cinjenica": "Kalanhoje treba držati izvan dohvata djece i kućnih ljubimaca, a pri rukovanju nositi zaštitne rukavice radi sprječavanja kontaktnog dermatitisa.",
+  "citat": "Keep these plants out of reach of children and pets. Wear protective gloves when handling these plants to prevent contact dermatitis.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Kalanchoe (rod)",
+  "url": "https://plants.ces.ncsu.edu/plants/kalanchoe/"
+ },
+ {
+  "id": "C114",
+  "tema": "kalanhoja",
+  "kategorija": "otrovnost",
+  "cinjenica": "ASPCA navodi kalanhoju (Kalanchoe spp.) kao otrovnu za pse i mačke; toksični principi su bufadienolidi.",
+  "citat": "Toxic Principles: Bufodienolides",
+  "izvor": "ASPCA: Toxic and Non-toxic Plants – Kalanchoe",
+  "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/kalanchoe"
+ },
+ {
+  "id": "C115",
+  "tema": "kalanhoja",
+  "kategorija": "otrovnost",
+  "cinjenica": "Simptomi trovanja kalanhojom prema ASPCA-i su povraćanje, proljev i rijetko abnormalan srčani ritam.",
+  "citat": "Clinical Signs: Vomiting, diarrhea, abnormal heart rhythm (rare).",
+  "izvor": "ASPCA: Toxic and Non-toxic Plants – Kalanchoe",
+  "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/kalanchoe"
+ },
+ {
+  "id": "C116",
+  "tema": "hibiskus",
+  "kategorija": "svjetlo",
+  "cinjenica": "Hibiskusu u zatvorenom prostoru treba velika posuda i mjesto koje prima jaku svjetlost.",
+  "citat": "Indoors, it requires a large container in a location that receives bright light.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Hibiscus rosa-sinensis",
+  "url": "https://plants.ces.ncsu.edu/plants/hibiscus-rosa-sinensis/"
+ },
+ {
+  "id": "C117",
+  "tema": "hibiskus",
+  "kategorija": "tlo",
+  "cinjenica": "Hibiskusu treba mjesto s punim suncem do polusjene te bogato, vlažno tlo s dobrom drenažom.",
+  "citat": "Plant in a location with full sun to partial shade and in rich, moist soil with good drainage.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Hibiscus rosa-sinensis",
+  "url": "https://plants.ces.ncsu.edu/plants/hibiscus-rosa-sinensis/"
+ },
+ {
+  "id": "C118",
+  "tema": "hibiskus",
+  "kategorija": "zalijevanje",
+  "cinjenica": "Korijenje hibiskusa treba držati vlažnim.",
+  "citat": "The roots should be kept moist.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Hibiscus rosa-sinensis",
+  "url": "https://plants.ces.ncsu.edu/plants/hibiscus-rosa-sinensis/"
+ },
+ {
+  "id": "C119",
+  "tema": "hibiskus",
+  "kategorija": "vlaga",
+  "cinjenica": "Kineski hibiskus cijeni visoku vlažnost zraka.",
+  "citat": "Chinese hibiscus appreciates high humidity and needs protection from wind and frost",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Hibiscus rosa-sinensis",
+  "url": "https://plants.ces.ncsu.edu/plants/hibiscus-rosa-sinensis/"
+ },
+ {
+  "id": "C120",
+  "tema": "hibiskus",
+  "kategorija": "temperatura",
+  "cinjenica": "Kineski hibiskus treba zaštitu od vjetra i mraza.",
+  "citat": "needs protection from wind and frost",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Hibiscus rosa-sinensis",
+  "url": "https://plants.ces.ncsu.edu/plants/hibiscus-rosa-sinensis/"
+ },
+ {
+  "id": "C121",
+  "tema": "hibiskus",
+  "kategorija": "ostalo",
+  "cinjenica": "Kineski hibiskus osjetljiv je na promjene okoliša, pa premještanje biljke može uzrokovati opadanje listova i pupoljaka.",
+  "citat": "Chinese hibiscus is sensitive to environmental changes, so moving the plant can cause leaf and bud drops.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Hibiscus rosa-sinensis",
+  "url": "https://plants.ces.ncsu.edu/plants/hibiscus-rosa-sinensis/"
+ },
+ {
+  "id": "C122",
+  "tema": "hibiskus",
+  "kategorija": "ostalo",
+  "cinjenica": "Za kompaktniji rast hibiskus se rano u proljeće reže za oko polovicu visine; cvjeta na novom priraštaju.",
+  "citat": "Prune back by about one-half the height in early spring to encourage a compact growth habit.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Hibiscus rosa-sinensis",
+  "url": "https://plants.ces.ncsu.edu/plants/hibiscus-rosa-sinensis/"
+ },
+ {
+  "id": "C123",
+  "tema": "hibiskus",
+  "kategorija": "stetnici",
+  "cinjenica": "NC State ne navodi značajne probleme s hibiskusom, ali treba paziti na štitaste uši.",
+  "citat": "No significant problems, but watch for scale insects.",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Hibiscus rosa-sinensis",
+  "url": "https://plants.ces.ncsu.edu/plants/hibiscus-rosa-sinensis/"
+ },
+ {
+  "id": "C124",
+  "tema": "hibiskus",
+  "kategorija": "ostalo",
+  "cinjenica": "Kineski hibiskus može narasti 4 do 10 stopa (oko 1,2 do 3 m) u visinu i 5 do 8 stopa (oko 1,5 do 2,4 m) u širinu, pa treba uzeti u obzir potreban prostor.",
+  "citat": "It grows 4 to 10 feet high and 5 to 8 feet wide",
+  "izvor": "NC State Extension Gardener Plant Toolbox: Hibiscus rosa-sinensis",
+  "url": "https://plants.ces.ncsu.edu/plants/hibiscus-rosa-sinensis/"
+ },
+ {
+  "id": "C125",
+  "tema": "hibiskus",
+  "kategorija": "otrovnost",
+  "cinjenica": "ASPCA-ina stranica „Hibiscus“ kao znanstveni naziv navodi Hibiscus syriacus, a među uobičajenim nazivima i „Rose of China“; biljku navodi kao netoksičnu za pse, mačke i konje. Izričit podatak o otrovnosti vrste Hibiscus rosa-sinensis na toj stranici ne postoji.",
+  "citat": "Non-Toxic to Dogs, Non-Toxic to Cats, Non-Toxic to Horses",
+  "izvor": "ASPCA: Toxic and Non-toxic Plants – Hibiscus",
+  "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/hibiscus"
+ }
+]
