@@ -43,4 +43,5 @@ Potreban je [uv](https://docs.astral.sh/uv/):
 uv sync
 uv run src/k1_manifest.py            # popis slika, sažeci, smanjene kopije
 uv run src/k2_ciscenje_i_podjela.py  # uklanjanje duplikata; podjela po skupinama srodnih slika
+uv run src/k2b_provjera_podjele.py   # što je od srodnih slika ipak ostalo s obje strane podjele
 ```
