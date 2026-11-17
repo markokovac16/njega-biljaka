@@ -11,6 +11,7 @@ daje samo opće savjete.
 | Mapa | Što sadrži |
 | --- | --- |
 | `src/` | priprema podataka (Python) |
+| `rezultati/` | rezultati pokretanja (JSON) |
 | `web/` | sučelje (Vue + Vite) |
 | `znanje/` | baza činjenica o njezi s izvorima (`cinjenice.json`) |
 | `alati/` | alat za ručnu provjeru oznaka fotografija |
@@ -41,4 +42,5 @@ Potreban je [uv](https://docs.astral.sh/uv/):
 ```bash
 uv sync
 uv run src/k1_manifest.py            # popis slika, sažeci, smanjene kopije
+uv run src/k2_ciscenje_i_podjela.py  # uklanjanje duplikata; podjela po skupinama srodnih slika
 ```

@@ -1,0 +1,302 @@
+{
+ "prag_duplikat": 6,
+ "prag_slicne": 10,
+ "slika_ukupno": 20019,
+ "ostaje": 15823,
+ "duplikata": 4087,
+ "proturjecnih": 109,
+ "identicnih_datoteka_visak": 3802,
+ "skupine_medu_izvorima": {
+  "aloe_vera_leaf_disease + plantvita_aloevera": 1899,
+  "indoor_plant_disease + money_plant_atlas": 23
+ },
+ "po_izvoru": [
+  {
+   "izvor": "aloe_vera_diseases",
+   "ukupno": 2337,
+   "duplikat": 59,
+   "ostaje": 2278,
+   "proturječna oznaka": 0
+  },
+  {
+   "izvor": "aloe_vera_leaf_disease",
+   "ukupno": 2500,
+   "duplikat": 86,
+   "ostaje": 2364,
+   "proturječna oznaka": 50
+  },
+  {
+   "izvor": "combined_medicinal",
+   "ukupno": 559,
+   "duplikat": 7,
+   "ostaje": 552,
+   "proturječna oznaka": 0
+  },
+  {
+   "izvor": "epipremnum_aureum",
+   "ukupno": 3690,
+   "duplikat": 27,
+   "ostaje": 3655,
+   "proturječna oznaka": 8
+  },
+  {
+   "izvor": "healthy_wilted",
+   "ukupno": 904,
+   "duplikat": 73,
+   "ostaje": 831,
+   "proturječna oznaka": 0
+  },
+  {
+   "izvor": "houseplant_health",
+   "ukupno": 91,
+   "duplikat": 4,
+   "ostaje": 87,
+   "proturječna oznaka": 0
+  },
+  {
+   "izvor": "indoor_leaf_health",
+   "ukupno": 914,
+   "duplikat": 1,
+   "ostaje": 913,
+   "proturječna oznaka": 0
+  },
+  {
+   "izvor": "indoor_plant_disease",
+   "ukupno": 787,
+   "duplikat": 69,
+   "ostaje": 718,
+   "proturječna oznaka": 0
+  },
+  {
+   "izvor": "medicinal_leaf_disease",
+   "ukupno": 839,
+   "duplikat": 90,
+   "ostaje": 749,
+   "proturječna oznaka": 0
+  },
+  {
+   "izvor": "medicinal_leaf_health",
+   "ukupno": 641,
+   "duplikat": 2,
+   "ostaje": 639,
+   "proturječna oznaka": 0
+  },
+  {
+   "izvor": "money_plant_atlas",
+   "ukupno": 1872,
+   "duplikat": 1631,
+   "ostaje": 241,
+   "proturječna oznaka": 0
+  },
+  {
+   "izvor": "multiclass_medicinal",
+   "ukupno": 230,
+   "duplikat": 5,
+   "ostaje": 222,
+   "proturječna oznaka": 3
+  },
+  {
+   "izvor": "plantdoc",
+   "ukupno": 2572,
+   "duplikat": 68,
+   "ostaje": 2504,
+   "proturječna oznaka": 0
+  },
+  {
+   "izvor": "plantvita_aloevera",
+   "ukupno": 2083,
+   "duplikat": 1965,
+   "ostaje": 70,
+   "proturječna oznaka": 48
+  }
+ ],
+ "podjela": [
+  {
+   "dio": "test",
+   "nezdrava": 1202,
+   "zdrava": 753
+  },
+  {
+   "dio": "train",
+   "nezdrava": 5407,
+   "zdrava": 3883
+  },
+  {
+   "dio": "val",
+   "nezdrava": 1139,
+   "zdrava": 848
+  },
+  {
+   "dio": "vanjski_stvarni",
+   "nezdrava": 24,
+   "zdrava": 63
+  },
+  {
+   "dio": "vanjski_usjevi",
+   "nezdrava": 1662,
+   "zdrava": 842
+  }
+ ],
+ "podjela_po_izvoru": [
+  {
+   "izvor": "aloe_vera_diseases",
+   "test": 342,
+   "train": 1594,
+   "val": 342
+  },
+  {
+   "izvor": "aloe_vera_leaf_disease",
+   "test": 354,
+   "train": 1656,
+   "val": 354
+  },
+  {
+   "izvor": "combined_medicinal",
+   "test": 104,
+   "train": 409,
+   "val": 39
+  },
+  {
+   "izvor": "epipremnum_aureum",
+   "test": 548,
+   "train": 2558,
+   "val": 549
+  },
+  {
+   "izvor": "healthy_wilted",
+   "test": 124,
+   "train": 582,
+   "val": 125
+  },
+  {
+   "izvor": "indoor_leaf_health",
+   "test": 136,
+   "train": 640,
+   "val": 137
+  },
+  {
+   "izvor": "indoor_plant_disease",
+   "test": 107,
+   "train": 503,
+   "val": 108
+  },
+  {
+   "izvor": "medicinal_leaf_disease",
+   "test": 84,
+   "train": 512,
+   "val": 153
+  },
+  {
+   "izvor": "medicinal_leaf_health",
+   "test": 90,
+   "train": 435,
+   "val": 114
+  },
+  {
+   "izvor": "money_plant_atlas",
+   "test": 36,
+   "train": 169,
+   "val": 36
+  },
+  {
+   "izvor": "multiclass_medicinal",
+   "test": 19,
+   "train": 184,
+   "val": 19
+  },
+  {
+   "izvor": "plantvita_aloevera",
+   "test": 11,
+   "train": 48,
+   "val": 11
+  }
+ ],
+ "naivna_test_slika": 2601,
+ "naivna_test_s_duplikatom_u_treningu": 778,
+ "cista_test_slika": 1955,
+ "cista_test_sa_slicnom_u_treningu": 127,
+ "parova_test_ucenje_slicnih": 165,
+ "parova_test_ucenje_slicnih_razlicita_oznaka": 47,
+ "prag_zakrenute": 4,
+ "razmak_serije_s": 30,
+ "uspravni_po_udaljenosti": [
+  {
+   "od": 0,
+   "do": 2,
+   "parova": 19461,
+   "razlicita_oznaka": 0.002004008016032064,
+   "razlicit_izvor": 0.10991213195622013
+  },
+  {
+   "od": 3,
+   "do": 4,
+   "parova": 1309,
+   "razlicita_oznaka": 0.006111535523300229,
+   "razlicit_izvor": 0.868601986249045
+  },
+  {
+   "od": 5,
+   "do": 6,
+   "parova": 1587,
+   "razlicita_oznaka": 0.029615626969124134,
+   "razlicit_izvor": 0.3163201008191556
+  },
+  {
+   "od": 7,
+   "do": 8,
+   "parova": 911,
+   "razlicita_oznaka": 0.38199780461031835,
+   "razlicit_izvor": 0.38748627881448955
+  },
+  {
+   "od": 9,
+   "do": 10,
+   "parova": 2377,
+   "razlicita_oznaka": 0.31299957930164074,
+   "razlicit_izvor": 0.45056794278502316
+  }
+ ],
+ "zakrenuti_po_udaljenosti": [
+  {
+   "od": 0,
+   "do": 2,
+   "parova": 66761,
+   "razlicita_oznaka": 0.00017974565989125387,
+   "razlicit_izvor": 0.003295337098006321
+  },
+  {
+   "od": 3,
+   "do": 4,
+   "parova": 6710,
+   "razlicita_oznaka": 0.014605067064083458,
+   "razlicit_izvor": 0.910581222056632
+  },
+  {
+   "od": 5,
+   "do": 6,
+   "parova": 3214,
+   "razlicita_oznaka": 0.1297448662103298,
+   "razlicit_izvor": 0.8005600497822029
+  },
+  {
+   "od": 7,
+   "do": 8,
+   "parova": 3748,
+   "razlicita_oznaka": 0.4042155816435432,
+   "razlicit_izvor": 0.44983991462113126
+  },
+  {
+   "od": 9,
+   "do": 10,
+   "parova": 11582,
+   "razlicita_oznaka": 0.4215161457433949,
+   "razlicit_izvor": 0.4235019858400967
+  }
+ ],
+ "skupina_samo_slicne": 12257,
+ "skupina_sa_zakrenutima": 13066,
+ "skupina_bez_grupiranja": 13232,
+ "skupina_za_podjelu": 11024,
+ "najveca_skupina": 152,
+ "slika_u_skupinama_od_10_i_vise": 2032
+}
