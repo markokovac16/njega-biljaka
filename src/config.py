@@ -11,6 +11,7 @@ SIROVO = KORIJEN / "data" / "raw"      # preuzeti skupovi (nisu u gitu)
 PODACI = KORIJEN / "podaci"            # manifesti i smanjene kopije slika
 PREDMEMORIJA = PODACI / "slike_384"    # slike smanjene na najviše 384 px
 REZULTATI = KORIJEN / "rezultati"
+MODELI = KORIJEN / "modeli"
 
 SJEME = 42
 VELICINA = 224

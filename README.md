@@ -10,7 +10,7 @@ daje samo opće savjete.
 
 | Mapa | Što sadrži |
 | --- | --- |
-| `src/` | priprema podataka (Python) |
+| `src/` | priprema podataka, učenje i evaluacija klasifikatora (Python) |
 | `rezultati/` | rezultati pokretanja (JSON) |
 | `web/` | sučelje (Vue + Vite) |
 | `znanje/` | baza činjenica o njezi s izvorima (`cinjenice.json`) |
@@ -44,4 +44,13 @@ uv sync
 uv run src/k1_manifest.py            # popis slika, sažeci, smanjene kopije
 uv run src/k2_ciscenje_i_podjela.py  # uklanjanje duplikata; podjela po skupinama srodnih slika
 uv run src/k2b_provjera_podjele.py   # što je od srodnih slika ipak ostalo s obje strane podjele
+```
+
+Učenje klasifikatora (oko 17 min po modelu na Apple M5); svaka inačica uči se s tri sjemena:
+
+```bash
+uv run src/k4_trening.py --naziv osnovni
+uv run src/k4_trening.py --naziv osnovni_s1 --sjeme 1
+uv run src/k4_trening.py --naziv osnovni_s2 --sjeme 2
+uv run src/k4_trening.py --naziv jaka --augmentacija jaka         # i jaka_s1, jaka_s2
 ```
