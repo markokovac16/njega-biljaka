@@ -1,12 +1,4 @@
-"""Korak 4: treniranje klasifikatora zdrava / nezdrava (transfer learning).
-
-Cijela mreža se fino podešava. Nakon svake epohe mjeri se makro F1 na
-validacijskom skupu i sprema se najbolja epoha. Testni skup se ovdje ne dira.
-
-Primjer:  uv run src/k4_trening.py --naziv osnovni
-          uv run src/k4_trening.py --naziv osnovni_s1 --sjeme 1    (ponavljanje s drugim sjemenom)
-          uv run src/k4_trening.py --naziv jaka --augmentacija jaka
-"""
+"""Korak 4: učenje klasifikatora zdrava / nezdrava."""
 import argparse
 import json
 import time
@@ -28,7 +20,7 @@ def main():
     ap.add_argument("--augmentacija", default="osnovna", choices=["osnovna", "jaka"])
     ap.add_argument("--epohe", type=int, default=8)
     ap.add_argument("--lr", type=float, default=3e-4)
-    ap.add_argument("--sjeme", type=int, default=c.SJEME, help="sjeme slučajnih brojeva (početne težine zadnjeg sloja, redoslijed i augmentacija)")
+    ap.add_argument("--sjeme", type=int, default=c.SJEME)
     a = ap.parse_args()
 
     torch.manual_seed(a.sjeme)
@@ -42,7 +34,6 @@ def main():
     model = M.napravi_model().to(dev)
     ucit_tr = M.ucitavac(tr, M.transformacija_trening(a.augmentacija), mijesaj=True)
 
-    # težine razreda obrnuto razmjerne učestalosti, da rjeđi razred ne bude zapostavljen
     udio = (tr.oznaka == c.N).mean()
     tezine = torch.tensor([0.5 / (1 - udio), 0.5 / udio], dtype=torch.float32, device=dev)
     gubitak_fn = nn.CrossEntropyLoss(weight=tezine)
@@ -68,8 +59,7 @@ def main():
             zbroj += g.item() * len(y)
             n += len(y)
 
-        # epoha se bira sa središnjim izrezom kod svih modela
-        lg = M.logiti(model, va, dev, transformacija=M.transformacija_evaluacija("sredisnji_izrez"))
+        lg = M.logiti(model, va, dev)
         g_va = nn.functional.cross_entropy(torch.tensor(lg), torch.tensor(y_va)).item()
         pred = lg.argmax(1)
         red = dict(epoha=epoha, gubitak_train=zbroj / n, gubitak_val=g_va,

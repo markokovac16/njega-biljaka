@@ -11,7 +11,7 @@ daje samo opće savjete.
 | Mapa | Što sadrži |
 | --- | --- |
 | `src/` | priprema podataka, učenje i evaluacija klasifikatora (Python) |
-| `rezultati/` | rezultati pokretanja (JSON) |
+| `rezultati/` | rezultati pokretanja (JSON) i slike za rad (`rezultati/slike/`) |
 | `web/` | sučelje (Vue + Vite) |
 | `znanje/` | baza činjenica o njezi s izvorima (`cinjenice.json`) |
 | `alati/` | alat za ručnu provjeru oznaka fotografija |
@@ -53,4 +53,11 @@ uv run src/k4_trening.py --naziv osnovni
 uv run src/k4_trening.py --naziv osnovni_s1 --sjeme 1
 uv run src/k4_trening.py --naziv osnovni_s2 --sjeme 2
 uv run src/k4_trening.py --naziv jaka --augmentacija jaka         # i jaka_s1, jaka_s2
+```
+
+Odabir glavnog modela (inačica s većim prosječnim makro F1 na validaciji) i evaluacija:
+
+```bash
+uv run src/k4b_odabir.py
+uv run src/k5_evaluacija.py    # metrike, kalibracija, prag pouzdanosti, slike primjera
 ```

@@ -1,4 +1,4 @@
-"""Pomoćne funkcije za traženje sličnih slika preko perceptualnih hasheva."""
+"""Traženje sličnih slika preko perceptualnih sažetaka."""
 import os
 import re
 from datetime import datetime
@@ -8,23 +8,14 @@ import numpy as np
 
 import config as c
 
-# sedam inačica slike: zakretanja za 90, 180 i 270 stupnjeva te zrcaljenja
 INACICE = ["ROTATE_90", "ROTATE_180", "ROTATE_270", "FLIP_LEFT_RIGHT", "FLIP_TOP_BOTTOM", "TRANSPOSE", "TRANSVERSE"]
 
 
 def u_uint64(heksa):
-    """Popis heksadecimalnih hasheva (64 bita) pretvara u polje uint64."""
     return np.array([int(h, 16) for h in heksa], dtype=np.uint64)
 
 
 def parovi_ispod_praga(ph, dh, prag, blok=2000, ph2=None, dh2=None):
-    """Svi parovi (i < j) kojima su i pHash i dHash udaljeni najviše `prag` bitova.
-
-    Vraća polje oblika (n, 4): i, j, udaljenost pHash, udaljenost dHash.
-    Uspoređuje se svaka slika sa svakom, blok po blok, da stane u memoriju.
-    Ako su zadani ph2 i dh2 (sažeci zakrenutih inačica istih slika), uspoređuje se
-    inačica slike i s uspravnom slikom j i vraćaju se svi parovi i != j.
-    """
     n = len(ph)
     nadeni = []
     lijevo_ph, lijevo_dh = (ph, dh) if ph2 is None else (ph2, dh2)
@@ -39,7 +30,6 @@ def parovi_ispod_praga(ph, dh, prag, blok=2000, ph2=None, dh2=None):
 
 
 class Skupine:
-    """Union-find: spaja slike u skupine preko parova sličnih slika."""
 
     def __init__(self, n):
         self.rod = np.arange(n)
@@ -73,10 +63,6 @@ def _sazeci_jedne(kopija):
 
 
 def sazeci_inacica(df):
-    """pHash i dHash sedam zakrenutih i zrcaljenih inačica svake slike: dva polja oblika (n, 7).
-
-    Računa se iz smanjenih kopija i sprema u podaci/sazeci_inacica.npz.
-    """
     put = c.PODACI / "sazeci_inacica.npz"
     if put.exists():
         z = np.load(put)
@@ -91,7 +77,6 @@ def sazeci_inacica(df):
 
 
 def vrijeme_snimanja(ime):
-    """Vrijeme iz imena datoteke: (vrsta zapisa, sekunde) ili None ako ga ime ne sadrži."""
     m = re.search(r"IMG_?(\d{8})_?(\d{6})", ime)
     if m:
         try:
@@ -105,11 +90,6 @@ def vrijeme_snimanja(ime):
 
 
 def parovi_iste_serije(df, najveci_razmak):
-    """Parovi uzastopnih snimki istog izvora između kojih je prošlo najviše `najveci_razmak` sekundi.
-
-    Vraća popis parova rednih brojeva redaka (i, j). Odnosi se samo na izvore čija imena
-    datoteka sadrže vrijeme.
-    """
     v = df.putanja.str.split("/").str[-1].map(vrijeme_snimanja)
     red = np.flatnonzero(v.notna().to_numpy())
     t = df.iloc[red].assign(red=red, zapis=[x[0] for x in v.iloc[red]], t=[x[1] for x in v.iloc[red]])

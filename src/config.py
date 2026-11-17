@@ -1,24 +1,18 @@
-"""Zajedničke postavke: putanje i opis svih izvora podataka.
-
-Svaki izvor je opisan popisom mapa. Za svaku mapu navedeni su vrsta biljke,
-izvorni razred i binarna oznaka (zdrava / nezdrava). Ništa se ne zaključuje
-automatski iz naziva mape, da je preslikavanje vidljivo i provjerljivo.
-"""
+"""Putanje i opis izvora podataka."""
 from pathlib import Path
 
 KORIJEN = Path(__file__).resolve().parents[1]
-SIROVO = KORIJEN / "data" / "raw"      # preuzeti skupovi (nisu u gitu)
-PODACI = KORIJEN / "podaci"            # manifesti i smanjene kopije slika
-PREDMEMORIJA = PODACI / "slike_384"    # slike smanjene na najviše 384 px
+SIROVO = KORIJEN / "data" / "raw"
+PODACI = KORIJEN / "podaci"
+PREDMEMORIJA = PODACI / "slike_384"
 REZULTATI = KORIJEN / "rezultati"
 MODELI = KORIJEN / "modeli"
 
 SJEME = 42
 VELICINA = 224
-RAZREDI = ["zdrava", "nezdrava"]       # indeks 1 = nezdrava (pozitivan razred)
+RAZREDI = ["zdrava", "nezdrava"]  # indeks 1 = nezdrava (pozitivan razred)
 Z, N = "zdrava", "nezdrava"
 
-# uloga: "skup" ulazi u podjelu train/val/test; ostalo su vanjski testni skupovi
 IZVORI = {
     "indoor_plant_disease": {
         "mapa": "indoor_plant_disease_7wbstnfpjy/raw_dataset", "uloga": "skup",
@@ -45,7 +39,6 @@ IZVORI = {
     "epipremnum_aureum": {
         "mapa": "epipremnum_aureum_kd8hs7ch6t/Money Plant(Dr. D Y Patil Institute of Technology)",
         "uloga": "skup",
-        # mape Real_Image, Combined i College_Premise nemaju jednoznačnu oznaku zdravlja
         "razredi": {
             "Healthy": ("zlatni puzavac", Z),
             "Un-Healthy": ("zlatni puzavac", N),
@@ -128,14 +121,12 @@ IZVORI = {
             "Kalancho Complex Foliar Damage": ("kalanhoja", N),
         },
     },
-    # --- vanjski testni skupovi: nikad se ne koriste za treniranje ni za odabir praga ---
     "houseplant_health": {
         "mapa": "kaggle_houseplant_health_tarieretimitimi/data_raw", "uloga": "vanjski_stvarni",
         "razredi": {"Healthy": ("razne", Z), "Unhealthy": ("razne", N)},
     },
 }
 
-# PlantDoc (usjevi): zdravi su razredi čiji je naziv samo "<biljka> leaf".
 PLANTDOC_MAPA = "plantdoc"
 PLANTDOC_ZDRAVI = {
     "Apple leaf", "Bell_pepper leaf", "Blueberry leaf", "Cherry leaf", "Peach leaf",

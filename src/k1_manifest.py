@@ -1,11 +1,4 @@
-"""Korak 1: popis svih slika (manifest).
-
-Za svaku sliku provjerava da se može otvoriti, zapisuje dimenzije, md5 datoteke
-i dva perceptualna hasha (pHash i dHash), te sprema kopiju smanjenu na najviše
-384 px. Smanjene kopije služe samo da treniranje bude brže.
-
-Pokretanje:  uv run src/k1_manifest.py
-"""
+"""Korak 1: popis slika (manifest), sažeci i smanjene kopije."""
 import hashlib
 import os
 from multiprocessing import Pool
@@ -22,7 +15,6 @@ MAX_STRANICA = 384
 
 
 def popis_datoteka():
-    """Vraća retke (izvor, uloga, vrsta, izvorni razred, oznaka, putanja)."""
     retci = []
     for izvor, opis in c.IZVORI.items():
         for mapa, (vrsta, oznaka) in opis["razredi"].items():
@@ -32,7 +24,6 @@ def popis_datoteka():
             for p in sorted(dir_.rglob("*")):
                 if p.suffix.lower() in c.NASTAVCI:
                     retci.append((izvor, opis["uloga"], vrsta, mapa, oznaka, p))
-    # PlantDoc: train i test dio zajedno čine jedan vanjski skup
     for p in sorted((c.SIROVO / c.PLANTDOC_MAPA).glob("*/*/*")):
         if p.suffix.lower() in c.NASTAVCI:
             razred = p.parent.name
@@ -53,7 +44,7 @@ def obradi(arg):
             dhash = str(imagehash.dhash(im))
             kopija = c.PREDMEMORIJA / f"{i:06d}.jpg"
             im.save(kopija, quality=92)
-    except Exception as e:  # oštećena ili nečitljiva slika
+    except Exception as e:
         return dict(id=i, izvor=izvor, greska=f"{type(e).__name__}: {e}", putanja=str(p))
     return dict(
         id=i, izvor=izvor, uloga=uloga, vrsta=vrsta, razred=razred, oznaka=oznaka,

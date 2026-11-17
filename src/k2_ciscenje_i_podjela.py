@@ -1,24 +1,4 @@
-"""Korak 2: uklanjanje duplikata i podjela na train / val / test.
-
-1. Duplikati: slike kojima su pHash i dHash udaljeni najviše PRAG_DUPLIKAT bitova
-   spajaju se u skupinu. Iz svake skupine ostaje jedna slika. Skupine u kojima se
-   pojavljuju obje oznake (zdrava i nezdrava) izbacuju se u cijelosti.
-2. Podjela: srodne slike uvijek idu u isti dio skupa, da iste snimke ne završe i u
-   učenju i u testu. Srodne su: (a) duplikati (do PRAG_DUPLIKAT bitova; povezuju i
-   slike koje ostaju, preko uklonjenih kopija), (b) slike koje su gotovo iste nakon
-   zakretanja ili zrcaljenja (do PRAG_ZAKRENUTE bitova), (c) slike iste serije
-   snimanja (uzastopne snimke istog izvora s razmakom do RAZMAK_SERIJE sekundi; samo
-   za izvore čija imena datoteka sadrže vrijeme). Zakrenute slike i serije služe
-   samo za grupiranje: zbog njih se nijedna slika ne uklanja.
-   Pragovi su provjereni na oznakama: stvarne kopije imaju istu oznaku. Do 6 bitova
-   različitu oznaku ima najviše 3 % parova, a od 7 do 10 bitova više od 30 %, što
-   znači da su to većinom različiti listovi sličnog obrisa. Zato se slike udaljene
-   7 do 10 bitova (PRAG_SLICNE) ne grupiraju, nego se samo broje kao preostali rizik.
-   Podjela je 70/15/15 i stratificirana po izvoru i oznaci.
-3. Za usporedbu se sprema i "naivna" podjela bez čišćenja (manifest_naivni.csv).
-
-Pokretanje:  uv run src/k2_ciscenje_i_podjela.py
-"""
+"""Korak 2: uklanjanje duplikata i podjela na učenje, validaciju i test."""
 import json
 
 import numpy as np
@@ -30,11 +10,10 @@ import slicnost as s
 PRAG_DUPLIKAT = 6
 PRAG_SLICNE = 10
 PRAG_ZAKRENUTE = 4
-RAZMAK_SERIJE = 30   # sekundi
+RAZMAK_SERIJE = 30  # sekundi
 UDJELI = {"train": 0.70, "val": 0.15, "test": 0.15}
 
-# Koja slika ostaje kad je isti sadržaj u više izvora: vanjski testni skupovi imaju
-# prednost (da ostanu netaknuti), zatim izvori s jasnim podrijetlom i licencom.
+# kad je ista slika u više izvora, ostaje ona iz izvora koji je ranije na popisu
 PREDNOST = ["houseplant_health", "plantdoc", "indoor_plant_disease", "money_plant_atlas",
             "epipremnum_aureum", "aloe_vera_leaf_disease", "aloe_vera_diseases",
             "medicinal_leaf_health", "medicinal_leaf_disease", "multiclass_medicinal",
@@ -50,14 +29,7 @@ def skupine(n, parovi, prag):
 
 
 def podijeli(df, stupac_skupine, rng, udjeli=None, sloj=None):
-    """Cijele skupine dodjeljuje dijelovima; unutar svakog sloja (izvor, oznaka) cilj je omjer 70/15/15.
-
-    Skupine dolaze nasumičnim redom i svaka ide u dio kojem do ciljanog broja slika
-    nedostaje najviše. Tako i velika skupina (npr. duga serija snimanja) ne može
-    cijeli sloj odvući u test.
-    """
     dio = pd.Series("", index=df.index)
-    # skupina se vodi pod najčešćim (izvor, oznaka) svojih slika
     udjeli = udjeli or UDJELI
     sloj = df.izvor + "|" + df.oznaka if sloj is None else sloj
     sloj_skupine = sloj.groupby(df[stupac_skupine]).agg(lambda v: v.mode().iloc[0])
@@ -75,8 +47,6 @@ def podijeli(df, stupac_skupine, rng, udjeli=None, sloj=None):
 
 
 def po_udaljenosti(parovi, df):
-    """Koliko parova ima različitu oznaku, po razredima udaljenosti. Služi kao provjera pragova:
-    stvarne kopije imaju istu oznaku, slučajno slični parovi često nemaju."""
     udalj = np.maximum(parovi[:, 2], parovi[:, 3])
     izvor, oznaka = df.izvor.to_numpy(), df.oznaka.to_numpy()
     redovi = []
@@ -96,7 +66,6 @@ def main():
     df["skupina_duplikata"] = skupine(len(df), parovi, PRAG_DUPLIKAT)
     samo_slicne = skupine(len(df), parovi, PRAG_SLICNE)
 
-    # skupine za podjelu: slične slike + zakrenute/zrcaljene inačice + serije snimanja
     sk = s.Skupine(len(df))
     for a, b in parovi[np.maximum(parovi[:, 2], parovi[:, 3]) <= PRAG_DUPLIKAT][:, :2]:
         sk.spoji(a, b)
@@ -114,7 +83,6 @@ def main():
           f"sa serijama snimanja {df.skupina.nunique()}; parova u serijama {len(serije)}")
     print("najveće skupine:", df.skupina.value_counts().head(8).tolist())
 
-    # --- čišćenje ---
     df["rang"] = df.izvor.map({ime: i for i, ime in enumerate(PREDNOST)})
     broj_oznaka = df.groupby("skupina_duplikata").oznaka.transform("nunique")
     df["status"] = "ostaje"
@@ -126,7 +94,6 @@ def main():
     po_izvoru.insert(0, "ukupno", po_izvoru.sum(axis=1))
     print(po_izvoru)
 
-    # koliko skupina duplikata povezuje dva različita izvora
     izvori_skupine = df.groupby("skupina_duplikata").izvor.agg(lambda v: " + ".join(sorted(set(v))))
     medu_izvorima = izvori_skupine[izvori_skupine.str.contains(r"\+")].value_counts().to_dict()
 
@@ -138,17 +105,14 @@ def main():
     cist.drop(columns=["rang", "status"]).to_csv(c.PODACI / "manifest.csv", index=False)
     print(cist.groupby(["dio", "oznaka"]).size().unstack(fill_value=0))
 
-    # --- naivna podjela bez čišćenja: svaka slika zasebno, samo za pokus o curenju podataka ---
     naivni = df[df.uloga == "skup"].copy()
     naivni["svaka_za_sebe"] = naivni.id
     naivni["dio"] = podijeli(naivni, "svaka_za_sebe", np.random.default_rng(c.SJEME))
-    # koliko testnih slika naivne podjele ima duplikat u njezinu skupu za treniranje
     u_treningu = set(naivni[naivni.dio == "train"].skupina_duplikata)
     test_n = naivni[naivni.dio == "test"]
     naivni.drop(columns=["rang", "status", "svaka_za_sebe"]).to_csv(c.PODACI / "manifest_naivni.csv", index=False)
 
     test_c = cist[cist.dio == "test"]
-    # preostali rizik: testne slike koje u skupu za učenje imaju sliku udaljenu najviše PRAG_SLICNE bitova
     dio_reda = pd.Series("", index=df.index)
     dio_reda[cist.index] = cist.dio
     dio_reda = dio_reda.to_numpy()

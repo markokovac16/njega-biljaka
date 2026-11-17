@@ -1,18 +1,4 @@
-"""Korak 2b: provjera podjele. Što je od srodnih slika ipak ostalo s obje strane?
-
-Podjela u koraku 2 drži zajedno duplikate, zakrenute i zrcaljene kopije (do
-PRAG_ZAKRENUTE bitova) i serije snimanja (razmak do RAZMAK_SERIJE sekundi). Ova
-skripta mjeri što ta pravila ne pokrivaju, na gotovoj podjeli:
-  (a) testne slike čija je zakrenuta ili zrcaljena inačica nekoj slici za učenje
-      blizu, ali iznad praga grupiranja (do 6 bitova);
-  (b) testne slike koje u skupu za učenje imaju uspravnu sliku udaljenu 7 do 10 bitova;
-  (c) testne slike snimljene nedugo prije ili poslije neke slike za učenje iz istog
-      izvora (do 1, 2 i 5 minuta), samo za izvore s vremenom u imenu datoteke.
-Uz (a) i (b) broji se i koliko parova ima različitu oznaku: stvarne kopije imaju
-istu oznaku, pa visok udio različitih znači da su to većinom različiti listovi.
-
-Pokretanje:  uv run src/k2b_provjera_podjele.py
-"""
+"""Korak 2b: srodne slike preostale s obje strane podjele."""
 import json
 
 import numpy as np
@@ -26,7 +12,6 @@ SEKUNDE = [RAZMAK_SERIJE, 60, 120, 300]
 
 
 def test_ucenje(parovi, dio):
-    """Od parova (i, j, ...) ostavlja one kojima je jedna slika u testu, a druga u učenju; testna ide u prvi stupac."""
     i, j = parovi[:, 0], parovi[:, 1]
     a = (dio[i] == "test") & (dio[j] == "train")
     b = (dio[i] == "train") & (dio[j] == "test")
@@ -43,11 +28,10 @@ def sazetak(parovi, df):
 def main():
     svi = pd.read_csv(c.PODACI / "manifest_sirovi.csv")
     podjela = pd.read_csv(c.PODACI / "manifest.csv").set_index("id").dio
-    dio = svi.id.map(podjela).fillna("").to_numpy()      # uklonjene slike imaju prazan dio
+    dio = svi.id.map(podjela).fillna("").to_numpy()
     ph, dh = s.u_uint64(svi.phash), s.u_uint64(svi.dhash)
     rez = dict(test_slika=int((dio == "test").sum()), prag_zakrenute=PRAG_ZAKRENUTE, razmak_serije_s=RAZMAK_SERIJE)
 
-    # (a) zakrenute i zrcaljene inačice
     ph_i, dh_i = s.sazeci_inacica(svi)
     zakrenuti = np.concatenate([
         s.parovi_ispod_praga(ph, dh, PRAG_DUPLIKAT, ph2=ph_i[:, k], dh2=dh_i[:, k]) for k in range(ph_i.shape[1])])
@@ -56,14 +40,12 @@ def main():
     rez["zakrenute_do_praga"] = sazetak(zakrenuti[udalj <= PRAG_ZAKRENUTE], svi)
     rez["zakrenute_iznad_praga"] = sazetak(zakrenuti[udalj > PRAG_ZAKRENUTE], svi)
 
-    # (b) uspravne slične slike
     uspravni = test_ucenje(s.parovi_ispod_praga(ph, dh, PRAG_SLICNE), dio)
     udalj = np.maximum(uspravni[:, 2], uspravni[:, 3])
     rez["uspravne_do_praga"] = sazetak(uspravni[udalj <= PRAG_DUPLIKAT], svi)
     rez["uspravne_iznad_praga"] = sazetak(uspravni[udalj > PRAG_DUPLIKAT], svi)
     rez["slicne_test_id"] = sorted(int(x) for x in set(svi.id.to_numpy()[uspravni[udalj > PRAG_DUPLIKAT][:, 0]]))
 
-    # (c) vremenski razmak do najbliže slike za učenje iz istog izvora
     v = svi.putanja.str.split("/").str[-1].map(s.vrijeme_snimanja)
     t = svi[v.notna()].assign(zapis=[x[0] for x in v.dropna()], t=[x[1] for x in v.dropna()], dio=dio[v.notna()])
     razmaci, po_izvoru = [], {}
