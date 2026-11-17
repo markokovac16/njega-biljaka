@@ -10,6 +10,7 @@ daje samo opće savjete.
 
 | Mapa | Što sadrži |
 | --- | --- |
+| `src/` | priprema podataka (Python) |
 | `web/` | sučelje (Vue + Vite) |
 | `znanje/` | baza činjenica o njezi s izvorima (`cinjenice.json`) |
 | `alati/` | alat za ručnu provjeru oznaka fotografija |
@@ -32,4 +33,12 @@ Ključ se čita samo u razvojnom načinu (`pnpm dev`) i ne ulazi u izgrađenu in
 
 ## Podaci
 
-Slike se ne nalaze u repozitoriju (veličina i licence skupova). Preuzimaju se u `data/raw/`.
+Slike se ne nalaze u repozitoriju (veličina i licence skupova). Preuzimaju se u `data/raw/`; koja mapa kojeg
+skupa daje koju vrstu i oznaku zapisano je u `src/config.py`.
+
+Potreban je [uv](https://docs.astral.sh/uv/):
+
+```bash
+uv sync
+uv run src/k1_manifest.py            # popis slika, sažeci, smanjene kopije
+```

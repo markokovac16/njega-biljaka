@@ -1,0 +1,12 @@
+[project]
+name = "njega-biljaka"
+version = "0.1.0"
+description = "Sustav za detekciju bolesti i preporuku njege biljaka (završni rad, FIPU)"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "pillow>=13",
+    "imagehash>=4.3",
+    "numpy>=2.0",
+    "pandas>=3",
+    "tqdm>=4.66",
+]

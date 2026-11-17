@@ -1,0 +1,144 @@
+"""Zajedničke postavke: putanje i opis svih izvora podataka.
+
+Svaki izvor je opisan popisom mapa. Za svaku mapu navedeni su vrsta biljke,
+izvorni razred i binarna oznaka (zdrava / nezdrava). Ništa se ne zaključuje
+automatski iz naziva mape, da je preslikavanje vidljivo i provjerljivo.
+"""
+from pathlib import Path
+
+KORIJEN = Path(__file__).resolve().parents[1]
+SIROVO = KORIJEN / "data" / "raw"      # preuzeti skupovi (nisu u gitu)
+PODACI = KORIJEN / "podaci"            # manifesti i smanjene kopije slika
+PREDMEMORIJA = PODACI / "slike_384"    # slike smanjene na najviše 384 px
+REZULTATI = KORIJEN / "rezultati"
+
+SJEME = 42
+VELICINA = 224
+RAZREDI = ["zdrava", "nezdrava"]       # indeks 1 = nezdrava (pozitivan razred)
+Z, N = "zdrava", "nezdrava"
+
+# uloga: "skup" ulazi u podjelu train/val/test; ostalo su vanjski testni skupovi
+IZVORI = {
+    "indoor_plant_disease": {
+        "mapa": "indoor_plant_disease_7wbstnfpjy/raw_dataset", "uloga": "skup",
+        "razredi": {
+            "Money_Plant_Healthy": ("zlatni puzavac", Z),
+            "Money_Plant_Bacterial_wilt_disease": ("zlatni puzavac", N),
+            "Money_Plant_Manganese_Toxicity": ("zlatni puzavac", N),
+            "Snake_Plant_Healthy": ("sansevierija", Z),
+            "Snake_Plant_Anthracnose": ("sansevierija", N),
+            "Snake_Plant_Leaf_Withering": ("sansevierija", N),
+            "Spider_Plant_Healthy": ("zelenčica", Z),
+            "Spider_Plant_Fungal_leaf_spot": ("zelenčica", N),
+            "Spider_Plant_Leaf_Tip_Necrosis": ("zelenčica", N),
+        },
+    },
+    "money_plant_atlas": {
+        "mapa": "money_plant_atlas_rzjww3vdxt/MoneyPlant", "uloga": "skup",
+        "razredi": {
+            "Healthy": ("zlatni puzavac", Z),
+            "Bacterial wilt disease": ("zlatni puzavac", N),
+            "Manganese Toxicity": ("zlatni puzavac", N),
+        },
+    },
+    "epipremnum_aureum": {
+        "mapa": "epipremnum_aureum_kd8hs7ch6t/Money Plant(Dr. D Y Patil Institute of Technology)",
+        "uloga": "skup",
+        # mape Real_Image, Combined i College_Premise nemaju jednoznačnu oznaku zdravlja
+        "razredi": {
+            "Healthy": ("zlatni puzavac", Z),
+            "Un-Healthy": ("zlatni puzavac", N),
+            "Yellow Leaf": ("zlatni puzavac", N),
+        },
+    },
+    "aloe_vera_diseases": {
+        "mapa": "aloe_vera_diseases_cksmdjw8gy/Aole Vera Quality Grading Dataset/Original Alo Vera Dataset",
+        "uloga": "skup",
+        "razredi": {
+            "Fresh Aloe Vera": ("aloja", Z),
+            "Rust Aloe Vera": ("aloja", N),
+            "Rot Aloe Vera": ("aloja", N),
+        },
+    },
+    "aloe_vera_leaf_disease": {
+        "mapa": "aloe_vera_leaf_disease_7w6t4zx33n/Aloe vera leaf disease detection dataset/final",
+        "uloga": "skup",
+        "razredi": {
+            "Healthy": ("aloja", Z),
+            "Aloe Rust": ("aloja", N),
+            "Anthracnose": ("aloja", N),
+            "Leaf Spot": ("aloja", N),
+            "Sunburn": ("aloja", N),
+        },
+    },
+    "plantvita_aloevera": {
+        "mapa": "kaggle_plantvita_aloevera_gursimranjit/Aloevera", "uloga": "skup",
+        "razredi": {
+            "Healthy": ("aloja", Z),
+            "Infected": ("aloja", N),
+            "Wilting": ("aloja", N),
+        },
+    },
+    "healthy_wilted": {
+        "mapa": "kaggle_healthy_wilted_russellchan/houseplant_images", "uloga": "skup",
+        "razredi": {"healthy": ("razne", Z), "wilted": ("razne", N)},
+    },
+    "indoor_leaf_health": {
+        "mapa": "kaggle_indoor_leaf_health_gauravsaklani00/indoor-plant-dataset", "uloga": "skup",
+        "razredi": {"healthy": ("razne", Z), "unhealthy": ("razne", N)},
+    },
+    "medicinal_leaf_health": {
+        "mapa": "medicinal_leaf_health_89rfgtxbdc/Original Image Dataset", "uloga": "skup",
+        "razredi": {
+            "Aloe Vera Young Healthy": ("aloja", Z),
+            "Aloe Vera Mature Healthy": ("aloja", Z),
+            "Aloe Vera Disease": ("aloja", N),
+            "Aloe Vera Dried": ("aloja", N),
+            "Kalanchoe Pinnata Healthy": ("kalanhoja", Z),
+            "Kalanchoe Pinnata Disease": ("kalanhoja", N),
+            "Kalanchoe Pinnata Chlorotic": ("kalanhoja", N),
+            "Hibiscus Rosa Sinensis Healthy": ("hibiskus", Z),
+            "Hibiscus Rosa Sinensis Disease": ("hibiskus", N),
+            "Hibiscus Rosa Sinensis Chlorotic": ("hibiskus", N),
+        },
+    },
+    "medicinal_leaf_disease": {
+        "mapa": "medicinal_leaf_disease_ncg7kk3gwx/Medicinal_leaf_dataset", "uloga": "skup",
+        "razredi": {
+            "Kalanchoe_Healthy": ("kalanhoja", Z),
+            "Kalanchoe_Web_Blight": ("kalanhoja", N),
+            "Kalanchoe_Yellow": ("kalanhoja", N),
+            "Kalanchoe_Yellow_Blight": ("kalanhoja", N),
+        },
+    },
+    "multiclass_medicinal": {
+        "mapa": "multiclass_medicinal_fmf2s22ntd/Medicinal", "uloga": "skup",
+        "razredi": {
+            "Kalancho Asymptomatic": ("kalanhoja", Z),
+            "Kalanchoe Symptomatic": ("kalanhoja", N),
+            "Kalancho Complex Foliar Damage": ("kalanhoja", N),
+        },
+    },
+    "combined_medicinal": {
+        "mapa": "combined_medicinal_3kzjdcz97w/Combined Medicial Leaf Original Dataset", "uloga": "skup",
+        "razredi": {
+            "Kalancho Asymptomatic": ("kalanhoja", Z),
+            "Kalancho Chewing insect damage": ("kalanhoja", N),
+            "Kalancho Complex Foliar Damage": ("kalanhoja", N),
+        },
+    },
+    # --- vanjski testni skupovi: nikad se ne koriste za treniranje ni za odabir praga ---
+    "houseplant_health": {
+        "mapa": "kaggle_houseplant_health_tarieretimitimi/data_raw", "uloga": "vanjski_stvarni",
+        "razredi": {"Healthy": ("razne", Z), "Unhealthy": ("razne", N)},
+    },
+}
+
+# PlantDoc (usjevi): zdravi su razredi čiji je naziv samo "<biljka> leaf".
+PLANTDOC_MAPA = "plantdoc"
+PLANTDOC_ZDRAVI = {
+    "Apple leaf", "Bell_pepper leaf", "Blueberry leaf", "Cherry leaf", "Peach leaf",
+    "Raspberry leaf", "Soyabean leaf", "Strawberry leaf", "Tomato leaf", "grape leaf",
+}
+
+NASTAVCI = {".jpg", ".jpeg", ".png", ".webp", ".bmp", ".jfif"}
